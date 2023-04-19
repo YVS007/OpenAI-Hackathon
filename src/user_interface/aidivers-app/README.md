@@ -1,2 +1,0 @@
-# aidivers-app
- 
