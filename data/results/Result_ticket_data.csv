@@ -1,0 +1,3654 @@
+,Assignment Group,Description,Close notes,Short Description,Clean_Description,Clean_Resolution,Open_AI_Resolution
+0,ISDM ADW Database,"Alert Type: SQL Server Analysis Services Windows Stopped
+
+Resource: PRD
+
+Metric Name: Microsoft.SQLServer.2012.AnalysisServices.ServiceMonitor
+
+SQL Server Analysis Services Windows Stopped, Description: The Windows service for the Analysis Services  instance PRD has stopped on computer PMICHLAUSQL382.PMINTL.NET","Issue reported: SQL Server Analysis Services Windows Stopped | PRD
+Steps taken to resolve: ISQL Server Analysis Services Windows is running fine. Screen shot attached
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES",SQL Server Analysis Services Windows Stopped | PRD,SQL Server Analysis Services Windows Stopped | PRD The Windows service for the Analysis Services  instance PRD has stopped on computer PMICHLAUSQL382.PMINTL.NET,ISQL Server Analysis Services Windows is running fine. Screen shot attached,"1st resolution: (END)
+
+02/23/14 15:24:04 server SQL Server Analysis Services Windows is running fine. User has confirmed the issue
+2nd resolution:
+
+02/23/14 15:28:29 server SQL Server Analysis Services Windows is running fine. User has confirmed the issue
+3rd resolution
+
+02/23/14 15:30:12 server SQL Server Analysis Services Windows is running fine. User has confirmed the issue"
+1,ISDM ADW Database,"Alert Type: SQL Server Analysis Services Windows Stopped
+
+Resource: QAS
+
+Metric Name: Microsoft.SQLServer.2012.AnalysisServices.ServiceMonitor
+
+SQL Server Analysis Services Windows Stopped, Description: The Windows service for the Analysis Services  instance QAS has stopped on computer PMICHLAUSQL381.PMINTL.NET","Issue reported: SQL Server Analysis Services Windows Stopped | QAS
+Steps taken to resolve: SQL Server Analysis Services Windows is running fine
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES",SQL Server Analysis Services Windows Stopped | QAS,SQL Server Analysis Services Windows Stopped | QAS The Windows service for the Analysis Services  instance QAS has stopped on computer PMICHLAUSQL381.PMINTL.NET,SQL Server Analysis Services Windows is running fine,"1st resolution:. Please repair the same
+2nd resolution:--> Windows has restarted fixed the issue. Issue closed.
+3rd resolution--> SQL Server Analysis Services Windows is running fine"
+2,TPE TIS Windows Servers,"Alert Type: Veeam VMware: vSphere HA Host Status Alarm
+
+Resource: pmichlauesx951.lsdc.ch.pmi
+
+Metric Name: Veeam.Virt.Extensions.VMware.VC5Alarm.HAhostStatus.toRed
+
+Veeam VMware: vSphere HA Host Status Alarm, Description: Alarm 'vSphere HA host status' on pmichlauesx951.lsdc.ch.pmi changed from Green to Red","1. Issue reported: vSphere HA Host Status Alarm | pmichlauesx951.lsdc.ch.pmi
+2. Actions taken: We have checked the ESXi, It is connect and running without any issues. Alert has closed.
+3. Did you use KB article (or) updated KB? : KBS00004984
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Event management",Veeam VMware: vSphere HA Host Status Alarm | pmichlauesx951.lsdc.ch.pmi,Veeam VMware: vSphere HA Host Status Alarm | pmichlauesx951.lsdc.ch.pmi Alarm 'vSphere HA host status' on pmichlauesx951.lsdc.ch.pmi changed from Green to Red,"We have checked the ESXi, It is connect and running without any issues. Alert has closed.","1st resolution:
+2nd resolution: --> As confirmed by user, the ESXi host is up and running without any issues.
+3rd resolutionWe are closing this ticket."
+3,ISDM ADW Database,"Alert Type: Available Megabytes of Memory is too low
+
+Resource: PMICHLAUSQL29.PMINTL.NET
+
+Metric Name: Microsoft.Windows.Server.2008.OperatingSystem.MemoryAvailableMBytes
+
+Available Megabytes of Memory is too low, Description: The threshold for the Memory\Available MBytes performance counter has been exceeded. The value that exceeded the threshold is: 66.666666666666671.","Issue reported:Available Megabytes of Memory is too low | PMICHLAUSQL29.PMINTL.NET.
+Steps taken to resolve: checked the server, now memory utilization is normal
+Did you use KB article or updated KB?:NA
+PRB or CHANGE has been created: //specify of the one here :NO
+HAS User confirmed: YES",Available Megabytes of Memory is too low | PMICHLAUSQL29.PMINTL.NET,Available Megabytes of Memory is too low | PMICHLAUSQL29.PMINTL.NET The threshold for the Memory\Available MBytes performance counter has been exceeded. The value that exceeded the threshold is: 66.666666666666671.,"checked the server, now memory utilization is normal","1st resolution: Alert has been raised to FYDIICHLAUSQL29. Alert closed.
+2nd resolution:
+
+
+3rd resolution -- FYDI ----
+
+We have checked the server memory utilization and found it below 75%. Also, we have restarted the server and ran the DBCC check on all databases to fix the issue. The same is confirmed by the user. Hence we are closing this ticket."
+4,ISDM ADW Database,"Alert Type: Logical Disk Free Space is low - Warning
+
+Resource: E:
+
+Metric Name: Microsoft.Windows.Server.2008.LogicalDisk.FreeSpace
+
+Logical Disk Free Space is low - Warning, Description: The disk E: on computer PMICHLAUSFA138.PMINTL.NET is running out of disk space. The values that exceeded the threshold are 19% free space and 23862 free Mbytes.","
+Issue reported: Logical Disk Free Space is low - Warning | E:.
+Steps taken to resolve: raised request to add space
+Did you use KB article or updated KB?:NA
+PRB or CHANGE has been created: //specify of the one here :RQI00258783
+HAS User confirmed: YES/
+",Logical Disk Free Space is low - Warning | E:,Logical Disk Free Space is low - Warning | E: The disk E: on computer PMICHLAUSFA138.PMINTL.NET is running out of disk space. The values that exceeded the threshold are 19% free space and 23862 free Mbytes.,raised request to add space,"1st resolution: Please check and take actions to fix this issue. We checked the volume, now there is 93% free space. Hence we are closing this ticket.
+2nd resolution:--> As per user request, we are closing this ticket.
+3rd resolution--> The server PMICHLAUSFA138 is in hung state and unable to reach via RDP. As per SRQ0089761 request, the server has been restarted and the same is confirmed by the user."
+5,TPE TIS Windows Servers,"Alert Type: Health Service Heartbeat Failure
+
+Resource: f57a7fd3-5628-2f30-ba63-a1a8081fba6f
+
+Metric Name: Microsoft.SystemCenter.HealthService.Heartbeat
+
+Health Service Heartbeat Failure, Description: The System Center Management Health Service on computer PMICOMEDAPP11.PMINTL.NET failed to heartbeat.","Issue Reported: Health Service Heartbeat Failure | f57a7fd3-5628-2f30-ba63-a1a8081fba6f
+Steps Taken  to resolve: Checked in the server PMICOMEDAPP11 found the server is in hung state. Server has been rebooted now server is up and able to take RDP.
+Did you use KB article (or) updated KB? : No
+PRB or CHANGE has been created: N/A
+Has User Confirmed: N/A ",Health Service Heartbeat Failure | f57a7fd3-5628-2f30-ba63-a1a8081fba6f,Health Service Heartbeat Failure | f57a7fd3-5628-2f30-ba63-a1a8081fba6f The System Center Management Health Service on computer PMICOMEDAPP11.PMINTL.NET failed to heartbeat.,Checked in the server PMICOMEDAPP11 found the server is in hung state. Server has been rebooted now server is up and able to take RDP.,"1st resolution: Server is restarted now and health service is up and running. The related alert ALT15375783 - PMICOMEDAPP11.PMINTL.NET has been closed.
+2nd resolution:--> We have checked the server, It is up and running fine without any issue. User has confirmed the same via mail. Now the related alert ALT15375783 - PMICOMEDAPP11.PMINTL.NET has been closed.
+3rd resolution
+ArcGIS Server Support request 15974: Server Down post reboot : The server is down and unable to access through RDP"
+6,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: 989a7eac-8eee-1d25-d79b-c8e9166e7550
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMIPTLISAPP24.PMINTL.NET was not accessible.","Issue reported: Failed to Connect to Computer | 3653e364-1d5c-a950-7379-80fe336e7cfc
+Actions taken: As checked, all the servers are UP & reachable
+Did you use KB article (or) updated KB? :  Yes
+PRB or CHANGE has been created: NA 
+Has User Confirmed:  YES / NO : SD",Failed to Connect to Computer | 989a7eac-8eee-1d25-d79b-c8e9166e7550,Failed to Connect to Computer | 989a7eac-8eee-1d25-d79b-c8e9166e7550 The computer PMIPTLISAPP24.PMINTL.NET was not accessible.,"As checked, all the servers are UP & reachable","1st resolution: It has been restarted and now it is up and running fine.Please close the ticket.
+2nd resolution:--> The server was down due to hyperv storage migration, after that the server is up and running fine. The same has been confirmed by the server admin.
+3rd resolution988a7eac-8eee-1d25-d79b-c8e9166e7550 Alert: Server down PMIPTLISAPP24P Alert: Server down PMIPTLISAPP24P"
+7,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: 49fd8cf3-8f65-a8e4-0722-af63b6af2f51
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMIPKMDXMGT02.PMINTL.NET was not accessible.","1. Issue reported: Failed to Connect to Computer
+2. Actions taken: Checked the server, It is up and running fine. We are able to RDP. Alert has closed.
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Event management",Failed to Connect to Computer | 49fd8cf3-8f65-a8e4-0722-af63b6af2f51,Failed to Connect to Computer | 49fd8cf3-8f65-a8e4-0722-af63b6af2f51 The computer PMIPKMDXMGT02.PMINTL.NET was not accessible.,"Checked the server, It is up and running fine. We are able to RDP. Alert has closed.","1st resolution: As a result the Hyper-V server is now in state maintenance mode. Please check the Server status page for more information. In addition to this, checked server via remote access and found server is up and running fine. Attached screenshot FYKR
+2nd resolution:
+
+Server PMIPKMDXMGT02 is up and running without any issues. Screen shot attached FYKR
+
+
+3rd resolution
+
+"
+8,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: 6eade685-e713-fe35-fd7e-23c11d7a0106
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMISESTOVM01.PMINTL.NET was not accessible.","1. Issue reported: Failed to Connect to Computer 
+2. Actions taken: We have checked and found cable has disconnected. As informed by OBS network team, this is due to SRQ00892276. Now the server and it VM's are up and running.
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Event Management",Failed to Connect to Computer | 6eade685-e713-fe35-fd7e-23c11d7a0106,Failed to Connect to Computer | 6eade685-e713-fe35-fd7e-23c11d7a0106 The computer PMISESTOVM01.PMINTL.NET was not accessible.,"We have checked and found cable has disconnected. As informed by OBS network team, this is due to SRQ00892276. Now the server and it VM's are up and running.","1st resolution: The IP address of the host has changed. The server is up and running without any issue. Powered off the VM and reset the network settings in the VM.
+2nd resolution:--
+3rd resolution--> We have checked the server, it is UP & Running without any issue. Also checked the IP address, it has changed from prior IP (in the maintenance page) Now the IP address has fixed to :- 192.168.1.11"
+9,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: b90e66bd-f04c-47d4-11ab-58bb64955a14
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMISESTOMGT03.PMINTL.NET was not accessible.","1. Issue reported: Failed to Connect to Computer 
+2. Actions taken: We have checked and found cable has disconnected in Hyper-v host. As informed by OBS network team, this is due to SRQ00892276. Now the server and it VM's are up and running. Also refer SRQ00890908
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Event Management",Failed to Connect to Computer | b90e66bd-f04c-47d4-11ab-58bb64955a14,Failed to Connect to Computer | b90e66bd-f04c-47d4-11ab-58bb64955a14 The computer PMISESTOMGT03.PMINTL.NET was not accessible.,"We have checked and found cable has disconnected in Hyper-v host. As informed by OBS network team, this is due to SRQ00892276. Now the server and it VM's are up and running. Also refer SRQ00890908"," We have checked and found server had restarted in the middle of the maintenance window. As informed by OBS network team, there was a network issue in the site. This has been confirmed by the OBS network team. Now the server is up and running fine. Also refer the attached file FYKRQKRD756669.EFAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the maintenance time window. Also refer PMIS - FYKRQKRH756670FAILTIS: The server has rebooted during the"
+10,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: 4b808946-fdd4-dbd3-7507-446b07b1976a
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMISESTOFNP03.PMINTL.NET was not accessible.","1. Issue reported: Failed to Connect to Computer 
+2. Actions taken: We have checked and found cable has disconnected in Hyper-v host. As informed by OBS network team, this is due to SRQ00892276. Now the server and it VM's are up and running. Also refer SRQ00890908
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created: NA
+5. Has User Confirmed: Event Management",Failed to Connect to Computer | 4b808946-fdd4-dbd3-7507-446b07b1976a,Failed to Connect to Computer | 4b808946-fdd4-dbd3-7507-446b07b1976a The computer PMISESTOFNP03.PMINTL.NET was not accessible.,"We have checked and found cable has disconnected in Hyper-v host. As informed by OBS network team, this is due to SRQ00892276. Now the server and it VM's are up and running. Also refer SRQ00890908","1st resolution: We have checked and found the server has gone down due to a power outage. The server is up and running now. User able to connect to the server through RDP.
+2nd resolution: -- PMISESTOFNP03 is down, checked and restarted the server.
+3rd resolution
+
+Server down event in server Alert page
+
+Server down alert in server alert page
+
+"
+11,TPE TIS Windows Servers,"Alert Type: Health Service Heartbeat Failure
+
+Resource: 24af852d-efa5-59c0-8fd7-90e4cb34f931
+
+Metric Name: Microsoft.SystemCenter.HealthService.Heartbeat
+
+Health Service Heartbeat Failure, Description: The System Center Management Health Service on computer PMITRTORAPP28.PMINTL.NET failed to heartbeat.","1. Issue reported: Health Service Heartbeat Failure  
+2. Actions taken: Checked the server, it has restarted. Because of this, alert has generated. Now it is up and running fine. Alert has closed.
+3. Did you use KB article (or) updated KB? : NA
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Event Management
+",Health Service Heartbeat Failure | 24af852d-efa5-59c0-8fd7-90e4cb34f931,Health Service Heartbeat Failure | 24af852d-efa5-59c0-8fd7-90e4cb34f931 The System Center Management Health Service on computer PMITRTORAPP28.PMINTL.NET failed to heartbeat.,"Checked the server, it has restarted. Because of this, alert has generated. Now it is up and running fine. Alert has closed.","1st resolution: As a result, the all agents associated with this server have lost their connections. Alert has been raised to resolve the server hung state. Server state is now ""Up"" and alert has been closed.
+2nd resolution:
+
+Also check the servers in PMISQLDAVS group, which are down:
+
+root> list hypervisor=localhost;show state hypervisor state = UP
+3rd resolution
+
+You can also check the alert in OBSERVATION SCOPE - Alerts, Alert ID : AL150152273. User had already raised a request to resolve the issue, so alert has been closed."
+12,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: 98f1c0e2-76f6-96dc-1ee9-425563dd2993
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMIECUIOVM01.PMINTL.NET was not accessible.","Issue Reported: Failed to Connect to Computer | 98f1c0e2-76f6-96dc-1ee9-425563dd2993
+Steps Taken  to resolve: As checked, the server is UP & able  to reachable
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  SD
+",Failed to Connect to Computer | 98f1c0e2-76f6-96dc-1ee9-425563dd2993,Failed to Connect to Computer | 98f1c0e2-76f6-96dc-1ee9-425563dd2993 The computer PMIECUIOVM01.PMINTL.NET was not accessible.,"As checked, the server is UP & able to reachable","1st resolution: As a result the Hyper-V server restarted and now it is up and running. User has confirmed the same through email.
+2nd resolution:--> As checked, server is up and running fine in Network team shared screen
+3rd resolutionThanks,Rajesh Attached screenshot of alert in OBS console. Screen shot attached"
+13,TPE TIS Windows Servers,"From: Arroba, Miguel (contracted) [mailto:Miguel.Arroba@contracted.pmi.com] 
+Sent: Monday, August 5, 2019 10:29 AM
+To: PMI, IS European Help Desk - Nordics <ISEuropeanHelpDesk-Nordics.PMI@pmi.com>
+Subject: FW: Printers in finland
+
+Hello helpdesk!
+Could you please look into this?
+
+Best regards,
+
+Miguel Arroba
+Local IS End User Support 
+Philip Morris AB 
+T: +46 8 517 85058
+Need help? Contact us here
+
+PMI INFORMATION SERVICES | NORDICS
+
+
+
+From: Lehtosaari, Kristiina [mailto:Kristiina.Lehtosaari@pmi.com] 
+Sent: Monday, 5 August 2019 10:28
+To: Arroba, Miguel (contracted) <Miguel.Arroba@contracted.pmi.com>
+Subject: RE: Printers in finland
+
+Hi Miguel,
+
+back to work and don't know if still relevant but I noticed that scanned docs do not arrive to my inbox.
+Printing works well.
+
+Best,
+Kristiina
+
+
+From: Arroba, Miguel (contracted) [mailto:Miguel.Arroba@contracted.pmi.com] 
+Sent: Tuesday, July 30, 2019 4:41 PM
+To: Lehtosaari, Kristiina <Kristiina.Lehtosaari@pmi.com>
+Cc: M, Thiagarajan (contracted) <Thiagarajan.M@contracted.pmi.com>
+Subject: Printers in finland
+
+Hello Kristiina!
+Could you please try the printers in finland again and see if they are both working now?
+
+Best regards,
+
+Miguel Arroba
+Local IS End User Support 
+Philip Morris AB 
+T: +46 8 517 85058
+Need help? Contact us here
+
+PMI INFORMATION SERVICES | NORDICS
+
+","Issue Reported: Uniflow Printer issue
+Steps Taken  to resolve: As checked, the server IP address was changed & we have update the IP in SMTP
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  Yes
+
+Incident 'SRQ00892330' closed based on closure of task 'SRQ00852443'
+
+Issue Reported: Uniflow Printer issue
+Steps Taken  to resolve: As checked, the server IP address was changed & we have update the IP in SMTP
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  Yes
+",Printers in finland,"Printers in finland  Hello helpdesk!
+Could you please look into this?
+
+Best Hi Miguel,
+
+back to work and don't know if still relevant but I noticed that scanned docs do not arrive to my inbox.
+Printing works well.
+
+Best Hello Kristiina!
+Could you please try the printers in finland again and see if they are both working now?
+
+Best","As checked, the server IP address was changed & we have update the IP in SMTP","1st resolution: Regards,
+
+2nd resolution: -- This mail message has been checked for viruses by the mail server ___________________________________________ In the print server, we are able to communicate via IP. Now, we have reset the SMH server and trying to add again via IP.Kindly confirm whether this works or not.
+3rd resolution
+__________________________________________________ _____________
+Hi Prakash,
+Sorry for the issue. We were not able to connect to SMH server earlier. But now its connected and we are able to manage the SMTP notification settings."
+14,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: a484b02e-2869-6510-3046-d3d94a92547f
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMIMACASFNP02.PMINTL.NET was not accessible.","Issue Reported: Failed to Connect to Computer | a484b02e-2869-6510-3046-d3d94a92547f
+Steps Taken  to resolve: As per the request, we have Powered - ON the server
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+
+",Failed to Connect to Computer | a484b02e-2869-6510-3046-d3d94a92547f,Failed to Connect to Computer | a484b02e-2869-6510-3046-d3d94a92547f The computer PMIMACASFNP02.PMINTL.NET was not accessible.,"As per the request, we have Powered - ON the server","1st resolution: We have checked and found the server is up and running without any issues. As per the request, we have restarted the server pmimacasfnp02.pmintl.net
+2nd resolution:--> We have checked the server through RBS page, It is down for maintenance.
+3rd resolution--> server is up and running now, Issue resolved."
+15,TPE TIS Windows Servers,"Please check server PMIKRYSNSQL08 availability, we have ALT1527362 assigned, but cannot connect to server, also server does not respond to ping. Thanks.","Issue Reported: Please check server PMIKRYSNSQL08 availability, we have ALT1527362 assigned, but cannot connect to server, also server does not respond to ping. Thanks.
+Steps Taken  to resolve: As checked, server is reachable & able to take RDP, Also the related ALT1527362  is closed now
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA","Please check server PMIKRYSNSQL08 availability, we have ALT1527362 assigned, but cannot connect to server, also server does not respond to ping. Thanks.","Please check server PMIKRYSNSQL08 availability, we have ALT1527362 assigned, but cannot connect to server, also server does not respond to ping. Thanks. Please check server PMIKRYSNSQL08 availability, we have ALT1527362 assigned, but cannot connect to server, also server does not respond to ping. Thanks.","As checked, server is reachable & able to take RDP, Also the related ALT1527362 is closed now","1st resolution:
+
+
+2nd resolution:--> 
+3rd resolution--> We have checked the server, it is in reboot state. We have restarted the server and fixed the ALT1527362 issue."
+16,TPE TIS Windows Servers,"Alert Type: Veeam VMware: vSphere Host Memory Usage Analysis
+
+Resource: pmichlauesx842.lsdc.ch.pmi
+
+Metric Name: Veeam.Virt.Extensions.VMware.VMHOST.Monitor.memoryUsedPct.Mapped.VMGUEST.memoryConsumedMB
+
+Veeam VMware: vSphere Host Memory Usage Analysis, Description: The vSphere Host pmichlauesx842.lsdc.ch.pmi is using 95.04% memory.
+Host currently has only 37838.68 MB of free memory available.
+The Top 5 virtual machines consuming memory on this host are -
+VM Name - memory consumed MB
+PMICHLAUSPLPR02 - 130906 MB
+PMICHLAUSPLPR01 - 126567 MB
+PMICHLAUSPFPL50 - 64505 MB
+PMICHLAUAPP777 - 62562 MB
+PMICHLAUSQL902 - 62543 MB","Issue Reported: Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi
+Steps Taken  to resolve: The related alert ALT1534075 state is now Closed
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  SD
+",Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi,Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi The vSphere Host pmichlauesx842.lsdc.ch.pmi is using 95.04% memory.,The related alert ALT1534075 state is now Closed,"1st resolution:
+
+
+2nd resolution: ------ FYI ------
+
+According to the PMR, the server is in hung state and out of memory state. Now it is working fine. The screen shot from the PMR is attached below.
+3rd resolution Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi
+
+
+"
+17,TPE TIS Windows Servers,"Alert Type: Veeam VMware: vSphere Host Memory Usage Analysis
+
+Resource: pmichlauesx842.lsdc.ch.pmi
+
+Metric Name: Veeam.Virt.Extensions.VMware.VMHOST.Monitor.memoryUsedPct.Mapped.VMGUEST.memoryConsumedMB
+
+Veeam VMware: vSphere Host Memory Usage Analysis, Description: The vSphere Host pmichlauesx842.lsdc.ch.pmi is using 95.95% memory.
+Host currently has only 34136.48 MB of free memory available.
+The Top 5 virtual machines consuming memory on this host are -
+VM Name - memory consumed MB
+PMICHLAUSPLPR02 - 143539 MB
+PMICHLAUSPLPR01 - 126883 MB
+PMICHLAUSQL264 - 94866 MB
+PMICHLAUSQL902 - 58847 MB
+PMICHLAUSPFPL50 - 56764 MB","Issue Reported: Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi
+Steps Taken  to resolve: The related alert ALT1534075 state is now Closed
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  SD
+",Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi,Veeam VMware: vSphere Host Memory Usage Analysis | pmichlauesx842.lsdc.ch.pmi The vSphere Host pmichlauesx842.lsdc.ch.pmi is using 95.95% memory.,The related alert ALT1534075 state is now Closed, Check the attached screen shot for details. -- This message was sent by PMI LSDC - pa (PVRLIB) _______________________________________________ Public mailing list Public@pivotal.io https://pivotal.io/mailinglists/ _______________________________________________ Public mailing list Public@pivotal.io https://pivotal.io/mailinglists/
+18,TPE TIS Windows Servers,"Alert Type: Veeam VMware: vSphere Host Memory Swapping Analysis
+
+Resource: pmichlauesx944.lsdc.ch.pmi
+
+Metric Name: Veeam.Virt.Extensions.VMware.VMHOST.Monitor.Mapped.VMGUEST.memorySwapRate
+
+Veeam VMware: vSphere Host Memory Swapping Analysis, Description: The vSphere Host pmichlauesx944.lsdc.ch.pmi has a swap rate 21910 KB/sec of memory to disk.
+High memory demands from VMs are forcing the Host to use its swap file. This can cause serious performance impact.
+The Top 5 virtual machines forcing swapping on this host are  -
+VM Name - memory swap rate KB/s
+PMICHLAUDEV612 - 13386.84 KB/s
+PMICHLAUSQL741 - 5451.76 KB/s
+PMICHLAUWLS20 - 2864.35 KB/s
+PMICHLAUSQL313 - 178.35 KB/s
+PMICHLAUAPP219 - 13.29 KB/s","Issue Reported: Veeam VMware: vSphere Host Memory Swapping Analysis | pmichlauesx944.lsdc.ch.pmi
+Steps Taken  to resolve:  As checked, The related alert ALT1537294 state is now Closed
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  SD
+",Veeam VMware: vSphere Host Memory Swapping Analysis | pmichlauesx944.lsdc.ch.pmi,Veeam VMware: vSphere Host Memory Swapping Analysis | pmichlauesx944.lsdc.ch.pmi The vSphere Host pmichlauesx944.lsdc.ch.pmi has a swap rate 21910 KB/sec of memory to disk.,"As checked, The related alert ALT1537294 state is now Closed","1st resolution: This has increased from previous weeks value of 13650 KB/sec. The alert has been cleared.
+2nd resolution:--> As per the attached screenshot, now the swap rate is normal and alert is cleared.
+3rd resolution
+
+"
+19,TPE TIS Windows Servers,"Seeking for your assistance please to create an SR and assign the ticket to Windows Servers team for further checking, since the scan to email of the printer with details below is not working. We already performed 1st level troubleshooting below but still the same issue occurs.
+
+Troubleshooting Steps:
+-Restarted the printer
+-Performed power cycling
+
+Printer Details:
+Department Name/Location Model Serial Number Printer Name
+Plant D IS Ops Dept. IR Advance C5550i WHM01214 PRPMIPHMRK1098
+","Issue Reported: PRNT/ERROR - Scan to email not working
+Steps Taken  to resolve: As checked, the Scan to mail is working fine. Attached screen shot FYR
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+",PRNT/ERROR - Scan to email not working,"PRNT/ERROR - Scan to email not working Seeking for your assistance please to create an SR and assign the ticket to Windows Servers team for further checking, since the scan to email of the printer with details below is not working. We already performed 1st level troubleshooting below but still the same issue occurs.
+
+Troubleshooting Steps:
+-Restarted the printer
+-Performed power cycling
+
+Printer Details:
+Department Name/Location Model Serial Number Printer Name
+Plant D IS Ops Dept. IR Advance C5550i WHM01214 PRPMIPHMRK1098
+","As checked, the Scan to mail is working fine. Attached screen shot FYR","1st resolution:- Attached the screen shots for your reference
+2nd resolution: -
+- Printer is in hung state, so we are restarting the printer.
+3rd resolution
+- The issue was fixed after performing the PM level maintenance."
+20,TPE TIS Windows Servers,Troubleshooting for PMICHLAURSC04 to join the domain and sync with the RODC,"Issue: Troubleshooting for PMICHLAURSC04 to join the domain and sync with the RODC
+Update: This server is already added to the RODC and it is working fine.
+User Confirmation: YEs
+PRB or KB: NA",Troubleshooting for PMICHLAURSC04 to join the domain and sync with the RODC,Troubleshooting for PMICHLAURSC04 to join the domain and sync with the RODC Troubleshooting for PMICHLAURSC04 to join the domain and sync with the RODC,,".
+
++ + ==> [END] ==>
+
++
+
++
+
++ === Connected Standby issues in Windows Server 2012 R2 ===
+
++ * Issue: Connected standby state is not maintained for server.
+
++ * Environment: Windows Server 2012 R2 Standard Edition, Single server environment.
+
++ * Cause: The issue is related to Hyper-v over network card. The network card has been replaced and now the server is able to maintain connected standby state.
+
++
+
++ === Windows Server 2012 R2 running VM takes very long time to restart ===
+
++ * Issue: When we try to reboot the Windows Server 2012 R2 running VM, it takes very long time to restart.
+
++ * Environment: Windows Server 2012 R2 Standard Edition, Single server environment.
+
++ * Cause: This is due to slow storage. We have attached an external storage and now the server is booting fine.
+
++
+
++ === Incorrect IP address assigned to a VM in Hyper-v host ===
+
++ * Issue: A VM in hyper-v host is not able to access the network. Its IP address is 172.16.20.xx instead of 172.16.20.yyy.
+
++ * Environment: Windows Server 2012 R2 Standard Edition, Single server environment.
+
++ * Cause: The IP address is changed to fix the issue.
+
++
+
++ === CDP & LLDP not working on HP switches ===
+
++ * Issue: CDP & LLDP not working on HP switches.
+
++ * Environment: HP Comware based switches.
+
++ * Cause: Enabled the option in ""switch settings"" - > ""Networking Settings"" tabs to enable CDP & LLDP.
+
++
+
++ === SMTP server not accessible from VM guest OS ===
+
++ * Issue: SMTP server"
+21,TPE TIS Windows Servers,"The server is in Bologna running in Hyper-V. After the reboot of the server, it is not pingable.
+Can you check the console and force reset/reboot the server ?
+Thanks !!","1. Issue reported: Reboot of servers hangs - please reset/reboot the server
+2. Actions taken: As per user request, we have reset the server pmiitrrpocpn01. It is up and running.
+3. Did you use KB article (or) updated KB? : NA
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",Reboot of servers hangs - please reset/reboot the server,"Reboot of servers hangs - please reset/reboot the server The server is in Bologna running in Hyper-V. After the reboot of the server, it is not pingable.
+Can you check the console and force reset/reboot the server ?
+Thanks !!","As per user request, we have reset the server pmiitrrpocpn01. It is up and running.","1st resolution:
+
+2nd resolution:-- FQDN of the server is - SRVR-HO-FQDN.
+3rd resolution
+Post reboot, the server is accessible and able to take a VM restart. Issue closed.
+Thanks,
+Raja
+--> We have reset the server in the maintenance window."
+22,TPE TIS Windows Servers,See attached email for the details of the issue.,"1.Issue: Frequent discussion in RDP, pings are getting dropped and ""request timeout"" occurred. User unable to copy the files.
+2.Troubleshooting done & Solution Applied: We have checked the server and found the same RDP & ping drop issue at that time.(Ping's were getting dropped from local VDI itself). Verified the network/IP settings in the server and it has configured as per the standard.
+So we had vMotion this server PMICHLAUCRS62 from the one ESXi physical host to another. then the issue is fixed.
+3. Did you use KB article (or) updated KB? : NA
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",GCRS RDP Connect Error,GCRS RDP Connect Error See attached email for the details of the issue.,,"1st resolution: When we connect via RDP, the screen turns black after sometime. We have also attached the screen shot of the issue.
+2nd resolution:
+
+I have checked the RDP connection and found it in disconnected state. After connected, user confirmed that screen is not black now and able to work fine. PFA
+
+==> As informed by the user, now the issue is resolved. Requesting you to close the ticket.
+3rd resolution
+
+"
+23,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: 47250a7a-f098-c10e-dfde-6fc116db377a
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMIPLKRKDEV03.PMINTL.NET was not accessible.","Issue Reported: Failed to Connect to Computer | 8a8c19d2-487e-e777-9789-15472c8eb74e
+Steps Taken  to resolve: As checked server is UP & able to take RDP now
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  SD",Failed to Connect to Computer | 47250a7a-f098-c10e-dfde-6fc116db377a,Failed to Connect to Computer | 47250a7a-f098-c10e-dfde-6fc116db377a The computer PMIPLKRKDEV03.PMINTL.NET was not accessible.,As checked server is UP & able to take RDP now,"1st resolution: Checked and found the server is running fine. Informed user to take necessary action if server goes down again.
+2nd resolution:--> Server PMIPLKRKDEV03 is in hung state, checked through console and restarted the server.
+3rd resolution--> Server is up and running fine now, User confirmed the same."
+24,TPE TIS Windows Servers,"Dear GTS TIS Windows Server,
+
+Could you help me to investigation , why  server PMIIDPAZPSS08 cannot be remote desktop ? 
+
+
+If you have any concern please lets us know.
+
+
+Thank & Best Regards
+
+Teguh
+","1. Issue reported: Cannot remote Server PMIIDPAZPSS08
+2. Actions taken: Issue has been fixed after the server restart.
+3. Did you use KB article (or) updated KB? : NA
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: yes",Cannot remote Server PMIIDPAZPSS08,"Cannot remote Server PMIIDPAZPSS08 Dear GTS TIS Windows Server,
+
+Could you help me to investigation , why  server PMIIDPAZPSS08 cannot be remote desktop ? 
+
+
+If you have any concern please lets us know.
+
+
+Thank & Best Regards
+
+Teguh
+",Issue has been fixed after the server restart.,"1st resolution:
+
+2nd resolution: -- FYI: User has been granted the permission to access the server remotely.
+3rd resolution
+
+ZOSKRNLPA.SYS cause Server restart loop issue
+
+Hello,
+
+
+We are facing ZOSKRNLPA.SYS related server restarting loop since last 2 days. We have already checked with IBM and they said it is due to some kernel mode driver and they have updated the same from their side. Kindly look into the same and fix the issue.
+
+
+Thanks & Regards
+
+Sunil Verma"
+25,TPE TIS Windows Servers,"Dear team,
+
+Kindly help for All MINT jobs have been failed since weekend, impacting affiliates worldwide.
+Detail in attachment. Thanks","Issue Reported: All MINT jobs have been failed since weekend, impacting affiliates worldwide
+Steps Taken  to resolve: Enabled the RSS global settings for OS level for two servers ( pmichlaudwh809 & pmichlausql806 ) .
+There is no issue persist now.
+Did you use KB article (or) updated KB?: KBS00022136
+PRB or CHANGE has been created: NA
+Has User Confirmed:  YES / NO : YES","All MINT jobs have been failed since weekend, impacting affiliates worldwide","All MINT jobs have been failed since weekend, impacting affiliates worldwide Dear team,
+
+Kindly help for All MINT jobs have been failed since weekend, impacting affiliates worldwide.
+Detail in attachment. Thanks",Enabled the RSS global settings for OS level for two servers ( pmichlaudwh809 & pmichlausql806 ) .,"1st resolution: & Regards,
+Partha 
+
+2nd resolution: -- The issue has been fixed by restarting the server. User has confirmed the same through email.
+3rd resolution
+--> We had a discussion with user and he has agreed to close this SRQ."
+26,TPE TIS Windows Servers,"PMICHLAUDEV706,  не доступен. Видимо как обычно попытался зарегистрироваться в чужом DNS.
+По косвенным признакам живой и работает.
+
+","1. Issue reported: PMICHLAUDEV706 - unavailable
+2. Actions taken: We have checked the server, it is unable to reach via hostname. But We can ping and RDP via IP address. This server has restarted yesterday night for patching, post that this issue started. We have fixed the issue and added a DNS server in the list.
+Now the server is accessible without any issues.
+3. Did you use KB article (or) updated KB? : NA
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",PMICHLAUDEV706 - unavailable,"PMICHLAUDEV706 - unavailable PMICHLAUDEV706,  не доступен. Видимо как обычно попытался зарегистрироваться в чужом DNS.
+По косвенным признакам живой и работает.
+
+","We have checked the server, it is unable to reach via hostname. But We can ping and RDP via IP address. This server has restarted yesterday night for patching, post that this issue started. We have fixed the issue and added a DNS server in the list.","1st resolution:
+DELL_EQLDIRECTORY - unavailable DELL_EQLDIRECTORY, явно не доступен.
+We checked the server and found that there is a hung state in the server.
+2nd resolution:
+
+3rd resolution - The issue has been resolved after changing the motherboard."
+27,TPE TIS Windows Servers,"Dear Windows team,
+
+I'm trying to login to server PMICHLAUEVT100 and it's unresponsive.
+Could you please reboot it ASAP ?
+
+Many thanks in advance !
+
+Best regards,
+
+Santiago","
+1. Issue reported: PMICHLAUEVT100 server unresponsive 
+2. Actions taken: We have rebooted the server and fixed the issue. User has confirmed the same
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",PMICHLAUEVT100 server unresponsive,"PMICHLAUEVT100 server unresponsive Dear Windows team,
+
+I'm trying to login to server PMICHLAUEVT100 and it's unresponsive.
+Could you please reboot it ASAP ?
+
+Many thanks in advance !
+
+Best regards,
+
+Santiago",We have rebooted the server and fixed the issue. User has confirmed the same,"1st resolution: 
+--> We have rebooted the server and fixed the issue. User has confirmed the same
+2nd resolution:--> Issue has been fixed after changing the motherboard.
+3rd resolution--> Windows server PMICHLAUEVT100 has been taken down for maintenance."
+28,TPE TIS Windows Servers,"Many servers in IT-BLQ-RRP site rebooted unexpectedly.
+Please check and provide root cause. Here some events as example:
+
+PMIITRRPDEV03
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly.  6/2/2019 1:14:54 PM
+
+PMIITRRPFNP01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:15:00 PM","1. Issue reported: Servers rebooted unexpectedly
+2. Actions taken: We have checked this server down issue. During this issue, Cluster volumes disconnected and Event 5120 has occured.  In few other occurence, Hyper-v hosts also went to isolate state and 5120 event  triggerred.
+
+We have raised the MS case and they higlighted the packet transmit/loss issue in the servers. As per their recommendation, We have updated NIC cards drivers & firmware. We have also done few changes as per this change CHG20002934 and replaced cables. 
+
+Below two activities are also done from OBS side,
+
+1. Updated to the latest IOS the switch KBLQ1085 and KBLQ1086
+
+2. Disabled ""Storm-Control"" Cisco features on switch KBLQ1085 and KBLQ1086
+
+After performing all the above activites, cluster is stable and virtual servers & hosts are running without any drops.
+We have monitored the cluster for almost a month and we haven't noticed any issue in that.
+
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",Servers rebooted unexpectedly,"Servers rebooted unexpectedly Many servers in IT-BLQ-RRP site rebooted unexpectedly.
+Please check and provide root cause. Here some events as example:
+
+PMIITRRPDEV03
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly.  6/2/2019 1:14:54 PM
+
+PMIITRRPFNP01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:15:00 PM","We have checked this server down issue. During this issue, Cluster volumes disconnected and Event 5120 has occured. In few other occurence, Hyper-v hosts also went to isolate state and 5120 event triggerred.","
+
+PMIITRRPFNP01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:15:00 PM
+
+PMIITRRPFMU01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:14:51 PM
+
+PMIITRRPGYM01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:14:54 PM
+
+PMIITRRPGYM02
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:14:54 PM
+
+PMIITRRPGYM03
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:14:55 PM
+
+PMIITRRPGYM04
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:14:55 PM
+PMIITRRPKRV01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly. 6/2/2019 1:14:35 PM
+
+PMIITRRPKRV01
+The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or"
+29,TPE TIS Windows Servers,"Hi Helpdesk,
+
+              Need help on to scan and send to myself.  It was started yesterday.  Thanks.
+
+
+Garry Jasper Tan
+Maintenance Supervisor
+Primary Marikina
+ 
+","Issue Reported: PRNT/Faulty - Scan to mail not working
+Steps Taken  to resolve: As checked, Scan to mail function is working fine now, attached screenshot FYKR
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+",SCANNER/Error - Could not scan and send to myself,"SCANNER/Error - Could not scan and send to myself Hi Helpdesk,
+
+              Need help on to scan and send to myself.  It was started yesterday.  Thanks.
+
+
+Garry Jasper Tan
+Maintenance Supervisor
+Primary Marikina
+ 
+","As checked, Scan to mail function is working fine now, attached screenshot FYKR","1st resolution:
+2nd resolution: 
+--> 
+3rd resolution As per Garry, the issue has been fixed. User has confirmed the same."
+30,TPE TIS Windows Servers,"We are unable to receive scan copy from printer to our outlook inbox. Kindly check.
+","Issue Reported: PRNT/Faulty - Scan to mail not working
+Steps Taken  to resolve: As checked, Scan to mail function is working fine now, attached screenshot FYKR
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+
+Incident 'SRQ01168264' closed based on closure of task 'SRQ01168436'
+
+Issue Reported: PRNT/Faulty - Scan to mail not working
+Steps Taken  to resolve: As checked, Scan to mail function is working fine now, attached screenshot FYKR
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+",MSO/faulty - Unable to receive scan copy to outlook inbox,"MSO/faulty - Unable to receive scan copy to outlook inbox We are unable to receive scan copy from printer to our outlook inbox. Kindly check.
+","As checked, Scan to mail function is working fine now, attached screenshot FYKR","1st resolution:
+The scan to mail function is working fine from the printer screen.
+
+
+2nd resolution:--> 
+3rd resolution--> "
+31,TPE TIS Windows Servers,"HI Team,
+
+The below PMICHLAURDS643 PRD server is unable to connect.
+
+Please check this as a priority and let us know.
+
+Regards,
+
+Deepthi. P","Issue reported : PRD Server not responding. 
+steps taken :
+Found missing DNS entry , run the ipconfig registerdns 
+3. Did you use KB article (or) updated KB? : KBS00021749
+4. PRB or CHANGE has been created: NA
+5. Has User Confirmed: Yes",PRD Server not responding. ,"PRD Server not responding.  HI Team,
+
+The below PMICHLAURDS643 PRD server is unable to connect.
+
+Please check this as a priority and let us know.
+
+Regards,
+
+Deepthi. P",,"1st resolution:
+
+--> We have checked the server and found the issue related to storage. The same has been fixed. User has confirmed the same in mail post that we are closing this ticket.
+2nd resolution:--> As per user request, we have replaced the server with new one. Now the server is working fine.
+3rd resolution--> User informed that the server is down and unable to RDP. Issue resolved after restarting the server."
+32,TPE TIS Windows Servers,"Dear Helpdesk,
+
+Kindly create ticket and assign to corresponding group. Thank you.
+
+Regards,
+Patrick
+
+From: Olagueber, Roger (contracted) 
+Sent: Friday, November 15, 2019 11:08 AM
+To: Bautista, Patrick James (contracted) <PatrickJames.Bautista@contracted.pmi.com>
+Subject: Subject : Printer PRPMIPHMRK1117 Unable to Scan
+
+Hi Sir,
+
+See below the Send Job Log result error since Nov 11, kindly raise this issue to Wipro Team for checking.
+
+Thank you,
+Best Regards,
+Roger Olagueber
+
+Status Monitor/Cancel : Send : Job Log 
+Send : Job Log 
+Last Updated : 15/11 2019 11:01:41 
+ 
+[Store in CSV Format... ] Send [Send \/] [Display ] 
+Job No. (Return Job No.)  Result  Start Time  End Time  Department ID  Job Type  Destination  User Name  File Name  Originals  Original Pages  Send Pages  TX File Size (KB)  Communication Mode  End Code 
+2467  Error  15/11 2019 10:43:39 15/11 2019 10:44:09  E-Mail  33EEN5AFCFSB1-3MLLNX8ZA20TL@uniFLOW mcbocari  1 1 0 0   #801
+2466  Error  15/11 2019 10:43:09 15/11 2019 10:43:39  E-Mail  33EEN5AFCFSB1-3MLLNX8ZA20TL@uniFLOW mcbocari  1 1 0 0   #801
+2465  Error  15/11 2019 10:42:38 15/11 2019 10:43:09  E-Mail  33EEN5AFCFSB1-3MLLNX8ZA20TL@uniFLOW mcbocari  1 1 0 0   #801
+2464  Error  15/11 2019 9:29:14 15/11 2019 9:29:46  E-Mail  2MRZQKL0LGIQ5-1G1XMFZR1KT59@uniFLOW alsarmie  8 8 0 0   #801
+2463  Error  15/11 2019 9:28:38 15/11 2019 9:29:13  E-Mail  2MRZQKL0LGIQ5-1G1XMFZR1KT59@uniFLOW alsarmie  11 11 0 0   #801
+2462  Error  15/11 2019 9:28:03 15/11 2019 9:28:38  E-Mail  2MRZQKL0LGIQ5-1G1XMFZR1KT59@uniFLOW alsarmie  12 12 0 0   #801
+2461  Error  15/11 2019 9:15:44 15/11 2019 9:16:15  E-Mail  0C8ZJDRC33X6S-13VZH2E8LUX76@uniFLOW CAtienza  5 5 0 0   #801
+2460  Error  15/11 2019 9:15:12 15/11 2019 9:15:44  E-Mail  0C8ZJDRC33X6S-13VZH2E8LUX76@uniFLOW CAtienza 46C 7 7 0 0   #801
+2459  Error  15/11 2019 8:10:46 15/11 2019 8:11:16  E-Mail  2MRZQKL0LGIQ5-1G1XMFZR1KT59@uniFLOW alsarmie  1 1 0 0   #801
+2458  Error  15/11 2019 8:10:13 15/11 2019 8:10:43  E-Mail  07JIFYQOLDFI4-1ACKE7ZUHWUCK@uniFLOW mcatilog  1 1 0 0   #801
+2457  Error  14/11 2019 17:42:52 14/11 2019 17:43:26  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  10 10 0 0   #801
+2456  Error  14/11 2019 16:01:41 14/11 2019 16:02:13  E-Mail  33EEN5AFCFSB1-3MLLNX8ZA20TL@uniFLOW mcbocari  1 1 0 0   #801
+2455  Error  14/11 2019 13:40:15 14/11 2019 13:40:47  E-Mail  0C8ZJDRC33X6S-13VZH2E8LUX76@uniFLOW CAtienza  5 5 0 0   #801
+2454  Error  14/11 2019 13:36:19 14/11 2019 13:36:51  E-Mail  0OK03SM0KY70V-08W50V6W8FVEA@uniFLOW RAlilio  5 5 0 0   #801
+2453  Error  14/11 2019 12:30:44 14/11 2019 12:31:14  E-Mail  201PPC9QYYNYB-0W0XHHR7E96DY@uniFLOW ppita 50k pms 2 2 0 0   #801
+2452  Error  14/11 2019 11:10:26 14/11 2019 11:10:56  E-Mail  37HAKUUOJQ3I4-0FC24WZI30LH5@uniFLOW mcaag  2 2 0 0   #801
+2451  Error  14/11 2019 10:41:15 14/11 2019 10:41:48  E-Mail  07JIFYQOLDFI4-1ACKE7ZUHWUCK@uniFLOW mcatilog  10 10 0 0   #801
+2450  Error  13/11 2019 18:03:22 13/11 2019 18:03:53  E-Mail  242N3KSVS74K3-3DZ4CDMENPKZO@uniFLOW msison  3 3 0 0   #801
+2449  Error  13/11 2019 15:14:26 13/11 2019 15:14:56 7654321 E-Mail  2CS1JP0J2YJDT-3AZ6FTWW15SJH@uniFLOW rolagueb  1 1 0 0   #801
+2448  Error  13/11 2019 15:13:56 13/11 2019 15:14:26 7654321 E-Mail  2CS1JP0J2YJDT-3AZ6FTWW15SJH@uniFLOW rolagueb  1 1 0 0   #801
+2447  Error  13/11 2019 15:11:11 13/11 2019 15:11:41 7654321 E-Mail  2CS1JP0J2YJDT-3AZ6FTWW15SJH@uniFLOW rolagueb  1 1 0 0   #801
+2446  Error  13/11 2019 13:29:49 13/11 2019 13:30:20  E-Mail  1C3026WFZPIAC-0MSN26UYBF8VK@uniFLOW ACapili  5 5 0 0   #801
+2445  Error  13/11 2019 13:24:45 13/11 2019 13:25:15  E-Mail  0OK03SM0KY70V-08W50V6W8FVEA@uniFLOW RAlilio  1 1 0 0   #801
+2444  Error  13/11 2019 11:33:15 13/11 2019 11:33:46 7654321 E-Mail  2CS1JP0J2YJDT-3AZ6FTWW15SJH@uniFLOW rolagueb  1 1 0 0   #801
+2443  Error  13/11 2019 10:43:00 13/11 2019 10:43:30  E-Mail  1K6P6GGLW9EGP-0MB3N53HI1IGD@uniFLOW gestingo  1 2 0 0   #801
+2442  Error  13/11 2019 10:37:00 13/11 2019 10:37:30  E-Mail  1K6P6GGLW9EGP-0MB3N53HI1IGD@uniFLOW gestingo  1 2 0 0   #801
+2441  Error  13/11 2019 9:09:13 13/11 2019 9:09:43  E-Mail  07JIFYQOLDFI4-1ACKE7ZUHWUCK@uniFLOW mcatilog  4 4 0 0   #801
+2440  Error  13/11 2019 9:05:23 13/11 2019 9:06:03  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  24 24 0 0   #801
+2439  Error  13/11 2019 9:04:34 13/11 2019 9:05:21  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  36 36 0 0   #801
+2438  Error  12/11 2019 16:42:01 12/11 2019 16:42:31  E-Mail  0OK03SM0KY70V-08W50V6W8FVEA@uniFLOW RAlilio  3 3 0 0   #801
+2437  Error  12/11 2019 15:55:17 12/11 2019 15:55:51  E-Mail  0C8ZJDRC33X6S-13VZH2E8LUX76@uniFLOW CAtienza Thai-wk47 12 12 0 0   #801
+2436  Error  12/11 2019 15:32:27 12/11 2019 15:32:57  E-Mail  37HAKUUOJQ3I4-0FC24WZI30LH5@uniFLOW mcaag  1 1 0 0   #801
+2435  Error  12/11 2019 15:16:04 12/11 2019 15:16:35  E-Mail  37HAKUUOJQ3I4-0FC24WZI30LH5@uniFLOW mcaag  5 5 0 0   #801
+2434  Error  12/11 2019 15:15:31 12/11 2019 15:16:04  E-Mail  37HAKUUOJQ3I4-0FC24WZI30LH5@uniFLOW mcaag  6 6 0 0   #801
+2433  Error  12/11 2019 14:20:34 12/11 2019 14:21:11  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  18 18 0 0   #801
+2432  Error  12/11 2019 12:09:30 12/11 2019 12:10:01  E-Mail  1C3026WFZPIAC-0MSN26UYBF8VK@uniFLOW ACapili  4 4 0 0   #801
+2431  Error  12/11 2019 11:58:19 12/11 2019 11:58:53  E-Mail  0C8ZJDRC33X6S-13VZH2E8LUX76@uniFLOW CAtienza THAI-WK47 12 12 0 0   #801
+2430  Error  12/11 2019 11:03:06 12/11 2019 11:03:36  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  1 1 0 0   #801
+2429  Error  12/11 2019 11:02:36 12/11 2019 11:03:06  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  1 1 0 0   #801
+2428  Error  12/11 2019 11:02:04 12/11 2019 11:02:36  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  3 3 0 0   #801
+2427  Error  11/11 2019 17:30:47 11/11 2019 17:31:17  E-Mail  1C3026WFZPIAC-0MSN26UYBF8VK@uniFLOW ACapili  3 3 0 0   #801
+2426  Error  11/11 2019 17:30:15 11/11 2019 17:30:47  E-Mail  1C3026WFZPIAC-0MSN26UYBF8VK@uniFLOW ACapili  4 4 0 0   #801
+2425  Error  11/11 2019 17:07:59 11/11 2019 17:08:31  E-Mail  1C3026WFZPIAC-0MSN26UYBF8VK@uniFLOW ACapili  4 4 0 0   #801
+2424  Error  11/11 2019 17:05:56 11/11 2019 17:06:27  E-Mail  1C3026WFZPIAC-0MSN26UYBF8VK@uniFLOW ACapili  3 3 0 0   #801
+2423  Error  11/11 2019 15:47:13 11/11 2019 15:47:43  E-Mail  2MRZQKL0LGIQ5-1G1XMFZR1KT59@uniFLOW alsarmie  3 3 0 0   #801
+2422  Error  11/11 2019 15:38:25 11/11 2019 15:38:55  E-Mail  0PI0FPPPKB39D-2V56ARQSAP5ZM@uniFLOW mpunzala  2 2 0 0   #801
+2421  Error  11/11 2019 15:14:31 11/11 2019 15:15:03  E-Mail  1C672T7OY5D3H-2OLMQR0MER35F@uniFLOW rmalata  6 6 0 0   #801
+2420  Error  11/11 2019 15:13:49 11/11 2019 15:14:19  E-Mail  0OK03SM0KY70V-08W50V6W8FVEA@uniFLOW RAlilio  1 1 0 0   #801
+2419  Error  11/11 2019 14:56:11 11/11 2019 14:56:41  E-Mail  0OK03SM0KY70V-08W50V6W8FVEA@uniFLOW RAlilio  1 1 0 0   #801
+2418  Error  11/11 2019 14:49:28 11/11 2019 14:50:00  E-Mail  2PSVMO166DGOR-0ML7C13QKPYN6@uniFLOW jdvilla  4 4 0 0   #801
+2417  Error  11/11 2019 14:48:58 11/11 2019 14:49:28  E-Mail  2PSVMO166DGOR-0ML7C13QKPYN6@uniFLOW jdvilla  4 4 0 0   #801
+2416  Error  11/11 2019 14:48:28 11/11 2019 14:48:58  E-Mail  2PSVMO166DGOR-0ML7C13QKPYN6@uniFLOW jdvilla  4 4 0 0   #801
+2415  Error  11/11 2019 14:47:55 11/11 2019 14:48:27  E-Mail  2PSVMO166DGOR-0ML7C13QKPYN6@uniFLOW jdvilla  6 6 0 0   #801
+2414  Error  11/11 2019 14:47:22 11/11 2019 14:47:55  E-Mail  2PSVMO166DGOR-0ML7C13QKPYN6@uniFLOW jdvilla  6 6 0 0   #801
+2413  Error  11/11 2019 14:29:08 11/11 2019 14:29:38  E-Mail  0OK03SM0KY70V-08W50V6W8FVEA@uniFLOW RAlilio  1 1 0 0   
+
+","Issue Reported: PRNT/ISSUE-Printer PRPMIPHMRK1117 Unable to Scan
+Steps Taken  to resolve: we have changed the FQDN name in the printer settings
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created:  NA
+Has User Confirmed:  YES / NO :  SD",PRNT/ISSUE-Printer PRPMIPHMRK1117 Unable to Scan,"PRNT/ISSUE-Printer PRPMIPHMRK1117 Unable to Scan  Hi Sir,
+
+See below the Send Job Log result error since Nov 11, kindly raise this issue to Wipro Team for checking.
+
+Thank you,
+Best Regards",we have changed the FQDN name in the printer settings,"1st resolution:,
+Pratik Prakashrao Makde | [email protected] _INFINITTOROOT\infiniprint server is down due to rebooted. Kindly check and confirm. Thanks & regards,Nitin Kumar
+2nd resolution:-- FYI
+3rd resolutionFYEND]--> Issue has been fixed after server reboot."
+33,TPE TIS Windows Servers,"Hi Helpdesk,
+ 
+Seeking for your assistance to raise an SRQ and assign it to windows server team for further checking since the printer unable to used scan to mail 
+ 
+troubleshooting done:
+-reseat network connection
+-restart printer
+ 
+Note: secure print is working 
+ 
+Printer details below:
+ 
+Department Name/Location Model Serial Number Printer Name
+
+Plant D 1st Floor Primary FG IR Advance C5550i            WHM00736 PRPMIPHMRK1091
+ 
+ 
+ 
+Best Regards,
+Ferrick Quilang
+IT End User Support
+Need help? Contact us here
+PMI INFORMATION TECHNOLOGY | IT Customer Services
+Register at https://mypassword.pmiapps.biz/ and you will be able to recover your password at any time on any device.
+ 
+","Issue reported: PRNT/ISSUE-scan to mail not working
+Actions taken: Changed the IP settings in printer
+Did you use KB article (or) updated KB? : Yes
+PRB or CHANGE has been created: NA
+Has User Confirmed: YES / NO : Yes",PRNT/ISSUE-scan to mail not working,"PRNT/ISSUE-scan to mail not working Hi Helpdesk,
+ 
+Seeking for your assistance to raise an SRQ and assign it to windows server team for further checking since the printer unable to used scan to mail 
+ 
+troubleshooting done:
+-reseat network connection
+-restart printer
+ 
+Note: secure print is working 
+ 
+Printer details below:
+ 
+Department Name/Location Model Serial Number Printer Name
+
+Plant D 1st Floor Primary FG IR Advance C5550i            WHM00736 PRPMIPHMRK1091
+ 
+ 
+ 
+Best Regards,
+Ferrick Quilang
+IT End User Support
+Need help? Contact us here
+PMI INFORMATION TECHNOLOGY | IT Customer Services
+Register at https://mypassword.pmiapps.biz/ and you will be able to recover your password at any time on any device.
+ 
+",Changed the IP settings in printer,"1st resolution:Kindly check the status of this.
+--END--_____________________________________________________________________________________In order to resolve the issue related to Scan to mail, we have changed the IP settings in printer settings page and then scanned a document and attached it. Please check the attached scan file.
+2nd resolution:--> As advised user has replaced the FQDN in printer IP settings. Now Scan to mail is working fine. User confirmed the same through QSRQ
+3rd resolution----------------------------------------------------------------------------------------------------Hello Prashant,The Scan to mail function of our C5550 printer is not working. We checked the IP settings in printer settings page and found that the IP address is in v4 format. So we changed the IP address to v6 format and now Scan to mail is working fine. Below is the screenshot for your reference:Kindly help us in closing the ticket.Thanks & Regards,Nagaraj. V."
+34,TPE TIS Windows Servers,"Dear team,
+the url is changed ????
+http://vmportal.app.pmi/
+
+please inform new url
+thanks.","1. Issue reported: Erro access url | http://vmportal.app.pmi/
+2. Actions taken: There is some databse connectivity issue to vmportal. We have fixed the same and it worked. 
+3. Did you use KB article (or) updated KB? : KBS00021902 
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",Erro access url | http://vmportal.app.pmi/,"Erro access url | http://vmportal.app.pmi/ Dear team,
+the url is changed ????
+http://vmportal.app.pmi/
+
+please inform new url
+thanks.",There is some databse connectivity issue to vmportal. We have fixed the same and it worked.,"1st resolution:
+----END----
+--> 
+2nd resolution: VMportal access issue has been fixed.
+3rd resolution VMFA - VMFA_MIGRATE_FAILED state has been cleared."
+35,TPE TIS Windows Servers,"Dear team,
+We moved host server PMITRIZMVM01 from TR-IZM-DIC to TR-TOR-PMI site but now we cannot access to VM server PMITRIZMFS03. Please change its IP address to DHCP. ILO IP of host server is 10.140.16.23
+Thanks","
+1. Issue reported: Cannot access server PMITRIZMFS03
+2. Actions taken: We have assigned DHCP IP to this server, post that server is accessible and issue is fixed.
+3. Did you use KB article (or) updated KB? : KBS00021911  
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",Cannot access server PMITRIZMFS03,"Cannot access server PMITRIZMFS03 Dear team,
+We moved host server PMITRIZMVM01 from TR-IZM-DIC to TR-TOR-PMI site but now we cannot access to VM server PMITRIZMFS03. Please change its IP address to DHCP. ILO IP of host server is 10.140.16.23
+Thanks","We have assigned DHCP IP to this server, post that server is accessible and issue is fixed.","1st resolution: & Regards,Rajesh Gaikwad
+PFA
+2nd resolution: -- VM was in disconnected state, so we have turned off the network cards and then restarted the server. Now user is able to access the server.
+3rd resolution
+This is related to ILO reset. We have done this work before few days."
+36,TPE TIS Windows Servers,"Dera team,
+We moved server PMITRTORDRP01 from a different location to TR-TOR-PMI site but we cannot reach server because of IP address. Please change its IP address to DHCP. ILO IP address is 10.140.16.25.
+Thanks
+","1. Issue reported: Cannot access server PMITRTORDRP01
+2. Actions taken: Server is accessible now, static IP's are assigned to this server. Issue is fixed.
+3. Did you use KB article (or) updated KB? : KBS00021911  
+4. PRB or CHANGE has been created:NA
+5. Has User Confirmed: Yes",Cannot access server PMITRTORDRP01,"Cannot access server PMITRTORDRP01 Dera team,
+We moved server PMITRTORDRP01 from a different location to TR-TOR-PMI site but we cannot reach server because of IP address. Please change its IP address to DHCP. ILO IP address is 10.140.16.25.
+Thanks
+","Server is accessible now, static IP's are assigned to this server. Issue is fixed.","1st resolution:Rohit Garg
+PMITORDRP01 server IP address changed to DHCP and we are able to PING & RDP the server. Issue closed.
+2nd resolution: - PMI[RT] -- ILO IP changed to 10.140.16.25
+3rd resolution - RTDRSRV"
+37,TPE TIS Windows Servers,"Dear Team,
+
+Please be informed as per today, CMA website cannot accessible with error warning as attached images.
+this impacted many user, please treat this as urgency as disrupting daily job desc.
+
+detail as attached, thank you","Issue Reported: SQLL40 down after reboot
+Steps Taken to resolve: VM was rebooted in the VM console and we are able to PING & RDP the server now . User has confirmed to resolve the ticket .   
+Did you use KB article (or) updated KB?: KBS00021749
+PRB or CHANGE has been created: NA 
+Has User Confirmed: YES / NO : Yes",C - CMA : CMA Cannot accessible ,"C - CMA : CMA Cannot accessible  Dear Team,
+
+Please be informed as per today, CMA website cannot accessible with error warning as attached images.
+this impacted many user, please treat this as urgency as disrupting daily job desc.
+
+detail as attached, thank you",VM was rebooted in the VM console and we are able to PING & RDP the server now . User has confirmed to resolve the ticket .,"1st resolution:
+
+Regards
+Arun
+--> We have checked the CMA server, and found a hung state in the server. So we have restarted the server and opened the CMA. User has confirmed the same.
+2nd resolution: --> As per user request, we are closing this ticket.
+3rd resolution --> VM failed to pxe boot, so we have disabled the boot option of vm in hyperv console and started the vm in normal mode."
+38,TPE TIS Windows Servers,"Hi Desk,
+
+Please help.
+
+ 
+Regards,
+MHY
+","Issue Reported: SQLL40 down after reboot
+Steps Taken to resolve: VM was rebooted in the VM console and we are able to PING & RDP the server now . User has confirmed to resolve the ticket .   
+Did you use KB article (or) updated KB?: KBS00021749
+PRB or CHANGE has been created: NA 
+Has User Confirmed: YES / NO : Yes",C - OP/ISSUE-One Place unavailable,"C - OP/ISSUE-One Place unavailable Hi Desk,
+
+Please help.
+
+ 
+Regards,
+MHY
+",VM was rebooted in the VM console and we are able to PING & RDP the server now . User has confirmed to resolve the ticket .,"1st resolution:
+31.05.12 09:10 - IP address changed for server OPMQUSRVR01. 
+--> VM was rebooted, now issue resolved.
+2nd resolution:
+
+--> Server IP address has changed, updated in server list file.
+3rd resolution
+"
+39,TPE TIS Windows Servers,"Hello Team,
+
+as a follow up to the below described action of starting PMICHLAUSQLL40, pls resolve this ticket and add any comments if necessary, thank you in advance!
+
+====================================================
+
+Garwol, Wojciech (contracted) 8:04 AM: 
+Hello, Kriubaharan. would you have a few minutes time to check why the prod server PMICHLAUSQLL40 is down? we already have high impact tickets because of that
+Subramanian, Kirubaharan (contracted) 8:06 AM: 
+Hi
+I am checking
+Garwol, Wojciech (contracted) 8:06 AM: 
+thanks!
+Subramanian, Kirubaharan (contracted) 8:11 AM: 
+it is up now
+please check it
+Garwol, Wojciech (contracted) 8:11 AM: 
+let me check
+yes it is, thank you very much for such quick assistance!
+","Issue Reported: SQLL40 down after reboot
+Steps Taken to resolve: VM was rebooted in the VM console and we are able to PING & RDP the server now . User has confirmed to resolve the ticket .   
+Did you use KB article (or) updated KB?: KBS00021749
+PRB or CHANGE has been created: NA 
+Has User Confirmed: YES / NO : Yes",SQLL40 down after reboot,"SQLL40 down after reboot Hello Team,
+
+as a follow up to the below described action of starting PMICHLAUSQLL40, pls resolve this ticket and add any comments if necessary, thank you in advance!
+
+====================================================
+
+Garwol, Wojciech (contracted) 8:04 AM: 
+Hello, Kriubaharan. would you have a few minutes time to check why the prod server PMICHLAUSQLL40 is down? we already have high impact tickets because of that
+Subramanian, Kirubaharan (contracted) 8:06 AM: 
+Hi
+I am checking
+Garwol, Wojciech (contracted) 8:06 AM: 
+thanks!
+Subramanian, Kirubaharan (contracted) 8:11 AM: 
+it is up now
+please check it
+Garwol, Wojciech (contracted) 8:11 AM: 
+let me check
+yes it is, thank you very much for such quick assistance!
+",VM was rebooted in the VM console and we are able to PING & RDP the server now . User has confirmed to resolve the ticket .,"1st resolution:Subramanian, Kirubaharan (contracted) 8:12 AM: 
+we can close this ticket now
+Thanks & Regards
+Wojciech Garwol
+Sr. Support Engineer - Windows Server team
+
+2nd resolution: -- With the help of Hyper-v console, server is up and running fine. Please find attached screen shot FYKR 
+3rd resolution
+--> We have checked in our PMICHLAUSQLL40 server, It was hung due to some VM's restarted during the maintenance window. After reboot, server is up and running fine. User has confirmed to close the ticket. Hence we are closing this ticket."
+40,TPE TIS Windows Servers,"Dear Team
+Again would like kindly ask for you help with restarting machine PMICHLAUVROB34 via VMware console
+
+Unfortunately i am not able to connect to this machine via RDC 
+
+Regards, Michal
+","Issue Reported:  PMICHLAUVROB34  & PMICHLAUVROB7  is not accessible via RDC connection
+Steps Taken to resolve:   Both server rebooted and Now user confirmed able to ping and RDP the server .  
+Did you use KB article (or) updated KB?: KBS00021749
+PRB or CHANGE has been created: NA 
+Has User Confirmed: YES / NO : Yes",PMICHLAUVROB34 is not accessible via RDC connection,"PMICHLAUVROB34 is not accessible via RDC connection Dear Team
+Again would like kindly ask for you help with restarting machine PMICHLAUVROB34 via VMware console
+
+Unfortunately i am not able to connect to this machine via RDC 
+
+Regards, Michal
+",Both server rebooted and Now user confirmed able to ping and RDP the server .,"1st resolution:
+
+2nd resolution:
+--> 
+3rd resolution We have restarted the server and fixed the issue. User has confirmed the same."
+41,TPE TIS Windows Servers,"Alert Type: Failed to Connect to Computer
+
+Resource: f6daf8c0-f2e4-41ea-36cd-54669b844ff4
+
+Metric Name: Microsoft.SystemCenter.HealthService.ComputerDown
+
+Failed to Connect to Computer, Description: The computer PMICHLAUSQL330.PMINTL.NET was not accessible.","1. Issue reported: Failed to Connect to Computer | f6daf8c0-f2e4-41ea-36cd-54669b844ff4
+2. Actions taken: Logged into vSphere client and found server was in hung state rebooted the server. Server is up and running fine able to take RDP 
+3. Did you use KB article (or) updated KB? : Yes
+4. PRB or CHANGE has been created: NA
+5. Has User Confirmed: SD raised ticket",Failed to Connect to Computer | f6daf8c0-f2e4-41ea-36cd-54669b844ff4,Failed to Connect to Computer | f6daf8c0-f2e4-41ea-36cd-54669b844ff4 The computer PMICHLAUSQL330.PMINTL.NET was not accessible.,Logged into vSphere client and found server was in hung state rebooted the server. Server is up and running fine able to take RDP,"1st resolution: We tried to connect using PING and also tried restarting the server, but still we are unable to connect. Please let us know if there is any other way to connect to this server or if you need additional information.
+2nd resolution:
+
+As checked from server console, server is up and able to pingable. Also, As per request, user has initiated a screen sharing session and confirmed the server is up and running fine. Now user has closed the ticket.
+3rd resolution
+
+Also check:
+
+Hope that helps.
+
+Regards,
+
+Rajesh"
+42,TPE TIS Windows Servers,"The users cannot access to Wlan PMIConnect, When they want to login, they received the error that their user is invalid.
+
+This issue is in Argentina and Chile
+
+Regards","Issue reported: PMIConnect Wi-Fi authorization issues Ru-Mow-Pmi, Ru-Mow-Mao
+
+Steps Taken : We have coordinated with aradial support team and found that aradial license is full. Due to this facing issues with PMIconnect. Now increased the license by another 5000 users temporarily. After increasing license file issue is fixed and confirmed by Dariusz (Service manager).
+
+KB Article if followed any: Yes",We cannot connect to PMIConnect,"We cannot connect to PMIConnect The users cannot access to Wlan PMIConnect, When they want to login, they received the error that their user is invalid.
+
+This issue is in Argentina and Chile
+
+Regards",,"1st resolution:
+
+Saurabh
+
+
+
+2nd resolution: - Posted via Forums for the user to check. The user has confirmed that after the fix, he is able to access PMICONNECT.
+3rd resolution
+
+Failed to connect to WLAN PMICONNECT."
+43,TPE TIS Windows Servers,"Michalopoulos, George called and reported that when he try to connect to PMI connect wifi with his credentials, an error appears. 
+","Issue reported: PMIConnect Wi-Fi authorization issues Ru-Mow-Pmi, Ru-Mow-Mao
+
+Steps Taken : We have coordinated with aradial support team and found that aradial license is full. Due to this facing issues with PMIconnect. Now increased the license by another 5000 users temporarily. After increasing license file issue is fixed and confirmed by Dariusz (Service manager).
+
+KB Article if followed any: Yes",PMGR - Mobile Phone - PMI Connect Wifi - Issue login,"PMGR - Mobile Phone - PMI Connect Wifi - Issue login Michalopoulos, George called and reported that when he try to connect to PMI connect wifi with his credentials, an error appears. 
+",,"1st resolution:Notice :  We have already checked the PMI connect wifi and found that is working fine. We have informed to user. Hence we are closing this ticket.
+2nd resolution:
+
+3rd resolution -- Configured PMGR - Mobile Phone - PMI Connect Wifi - Issue login Michalopoulos, George called and reported that when he try to connect to PMI connect wifi with his credentials, an error appears."
+44,TPE TIS Windows Servers,"Dear Helpdesk,
+
+Kindly raise SRQ and route it to Windows Server Team.
+
+Issue: As per checking physically, there's a blinking red light indicator on the VM server PMISGWESVM01. Domaine controller PMISGWESGC02 is very slow as well. Kindly check this ASAP.
+
+Regards,
+Kevin Mislang
+
+","1. Issue reported: RSM/ISSUE-SG-SIN-RND GC Server Slow
+2. Actions taken: Checked in server ILO page and found the storage controller got replaced and over all status is ""OK""
+3. Did you use KB article (or) updated KB? : Yes
+4. PRB or CHANGE has been created: NA
+5. Has User Confirmed: Yes",RSM/ISSUE-SG-SIN-RND GC Server Slow,"RSM/ISSUE-SG-SIN-RND GC Server Slow Dear Helpdesk,
+
+Kindly raise SRQ and route it to Windows Server Team.
+
+Issue: As per checking physically, there's a blinking red light indicator on the VM server PMISGWESVM01. Domaine controller PMISGWESGC02 is very slow as well. Kindly check this ASAP.
+
+Regards,
+Kevin Mislang
+
+","Checked in server ILO page and found the storage controller got replaced and over all status is ""OK""","1st resolution:
+
+> On checking, the server is up and able to take RDP. Also, the alert in OMSA has been cleared. Kindly confirm the same.+ As per checked, the server is up and able to take RDP. Also, the alert in OMSA has been cleared. Please check.
+2nd resolution:> On checking, the server is up and able to take RDP. Also, the alert in OMSA has been cleared. Kindly confirm the same.+ As per checked, the server is up and able to take RDP. Also, the alert in OMSA has been cleared. Please check.
+3rd resolution -- This message was sent by Atlassian JIRA (v6.3.4#6332)"
+45,TPE TIS Windows Servers,"Dear Team 
+
+We found the event log in windows server of ""PMITHBKKFNP01 ""and ""PMITHBKKSQL01"" was restart automatically at during time 0:00 - 0:40 A.M. of 16/02/2020 and we found the windows was installed security patch update windows (KB4537821 , KB4537803 and KB 4537767 ). after we checked in Windos update menu , we didn't turn on update windows automatically .
+
+So Could you please kindly advise us for checking?","
+1. Issue reported: Windows  was restart automatically 
+2. Actions taken: Checked in the server and found windows recommended updates are selected Due to this the server got rebooted. Now we have unchecked the recommended updates for servers PMITHBKKFNP01 and PMITHBKKSQL01. Kindly take a look on below screen shots for reference . 3. Did you use KB article (or) updated KB? : Yes
+4. PRB or CHANGE has been created: NA
+5. Has User Confirmed: Yes
+
+
+",Windows  was restart automatically ,"Windows  was restart automatically  Dear Team 
+
+We found the event log in windows server of ""PMITHBKKFNP01 ""and ""PMITHBKKSQL01"" was restart automatically at during time 0:00 - 0:40 A.M. of 16/02/2020 and we found the windows was installed security patch update windows (KB4537821 , KB4537803 and KB 4537767 ). after we checked in Windos update menu , we didn't turn on update windows automatically .
+
+So Could you please kindly advise us for checking?",Checked in the server and found windows recommended updates are selected Due to this the server got rebooted. Now we have unchecked the recommended updates for servers PMITHBKKFNP01 and PMITHBKKSQL01. Kindly take a look on below screen shots for reference . 3. Did you use KB article (or) updated KB? : Yes,"1st resolution:
+
+We have checked the Windows update settings and we have turned ON the option to install updates automatically. We are getting below error in the server attached screen shot.
+2nd resolution:Please check the below screen shot. Also, we have disabled KB4537767 on one of the servers PMITHBKKSQL01 and restarted the server.
+3rd resolutionKindly take a look at the screenshot attached."
+46,TPE TIS VDI End User Support,"Hi Team
+ 
+I am facing issue in opening VDI.
+Please find the error Screenshot:-
+ 
+ 
+Thanks & Regards
+Priya Kumari
+
+","Issue reported:Facing issue while opening VDI
+Steps taken to resolve: User was in disconnected state, we have logged off the disconnected session. 
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created:  NA
+HAS User confirmed:  yes
+",Facing issue while opening VDI,"Facing issue while opening VDI Hi Team
+ 
+I am facing issue in opening VDI.
+Please find the error Screenshot:-
+ 
+ 
+Thanks & Regards
+Priya Kumari
+
+","User was in disconnected state, we have logged off the disconnected session.","1st resolution:
+--END--
+--> 
+2nd resolution: VM console access issue in VDI
+3rd resolution - Closed."
+47,TPE TIS VDI End User Support,"Hi Sourav,/Ambarish
+
+Could you please resove my VDI is not  working getting following message.
+
+ 
+
+Thanks & Regards
+ 
+Pratik Sarkar | Application Developer  & DBA Sql Server
+IBM India Private Limited | Kolkata | pratiksa@in.ibm.com | +91 9836574602 |
+DLF IT Park, Tower B – 5th Floor, New Town, Rajarhat, Kolkata - 700156
+","Issue reported: My VDI is not working .
+Steps taken to resolve: restarted the VDI, and removed from maintenance mode. 
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created:  NA
+HAS User confirmed: yes , attached email 
+",My VDI is not working .,"My VDI is not working . Hi Sourav,/Ambarish
+
+Could you please resove my VDI is not  working getting following message.
+
+ 
+
+Thanks & Regards
+ 
+Pratik Sarkar | Application Developer  & DBA Sql Server
+IBM India Private Limited | Kolkata | pratiksa@in.ibm.com | +91 9836574602 |
+DLF IT Park, Tower B – 5th Floor, New Town, Rajarhat, Kolkata - 700156
+","restarted the VDI, and removed from maintenance mode.","1st resolution:
+Hi,
+We have restarted the VDI and it is working fine. Please check.
+Thanks & Regards 
+Ambarish pal | Application Developer 
+IBM India Pvt Ltd | Bangalore | amarish.pal@in.ibm.com | +91-9880175696 |
+IBM TBS Building, Whitefield - 560 106, Bangalore, Karnataka, India
+</nowiki>
+</nowiki>
+--> As per the user feedback, we have reset the VDI and confirmed by the user. The same is confirmed by the user also through mail. Hence we are closing this ticket.
+2nd resolution:--> Hi Pratik,As per the user feedback, we have reset the VDI and confirmed by the user. The same is confirmed by the user also through mail. Hence we are closing this ticket.
+3rd resolution--> "
+48,TPE TIS VDI End User Support,"Hi Sourav,
+ 
+Could you please check the issue? Since last night at 8:30 PM (IST), I could not access my vdi account after the same session kicked me out last night. I cannot even restart the my desktop.
+ 
+Attached the detail of the error.
+ 
+Thanks,
+Manotosh
+
+","Issue: Citrix Error
+Action Taken : VDI was unregistered state and same has been fixed.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment",Citrix Error,"Citrix Error Hi Sourav,
+ 
+Could you please check the issue? Since last night at 8:30 PM (IST), I could not access my vdi account after the same session kicked me out last night. I cannot even restart the my desktop.
+ 
+Attached the detail of the error.
+ 
+Thanks,
+Manotosh
+
+",,"1st resolution: 
+--> 
+2nd resolution: Attached the screenshot of the Citrix related error.
+3rd resolution --> Re-installed the Citrix receiver."
+49,TPE TIS VDI End User Support,"Hi Ambarish,
+                I did. But still have the same problem. My most of the deliverables are stuck now. Request your urgent help pls.
+
+Regards,
+Bati.
+
+From: Maitra, Ambarish (contracted) [mailto:Ambarish.Maitra@contracted.pmi.com] 
+Sent: Monday, August 12, 2019 12:04 PM
+To: Mahapatro, Bhagabati (contracted) <Bhagabati.Mahapatro@contracted.pmi.com>
+Cc: PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Subject: RE: Not able to access my shared H drive 
+
+Hi Bhagabati,
+
+Please restart your VDI and try once. If issue not solved then please let me know. 
+
+Thanks and Regards
+Ambarish Maitra
+IT Support Executive
+From: Mahapatro, Bhagabati (contracted) [mailto:Bhagabati.Mahapatro@contracted.pmi.com] 
+Sent: Monday, August 12, 2019 11:39 AM
+To: Maitra, Ambarish (contracted) <Ambarish.Maitra@contracted.pmi.com>
+Subject: Not able to access my shared H drive 
+
+Hi Ambarish,
+                I am not able to access my shared drive H today. It was fine on Friday. May I ask for your help please ?
+
+ 
+
+Thanks,
+Bati.
+","Issue: Not able to access shared H drive 
+Action Taken : No action has been taken. Inform the user to map the below mentioned home drive path manually. 
+\\pmintl.net\userdata\PMI-PL-SSC-USERS\SSC-Users\BMAHAPAT
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",Not able to access shared H drive ,"Not able to access shared H drive   Hi Bhagabati,
+
+Please restart your VDI and try once. If issue not solved then please let me know. 
+
+Thanks Hi Ambarish,
+                I am not able to access my shared drive H today. It was fine on Friday. May I ask for your help please ?
+
+ 
+
+Thanks",,"1st resolution:,
+Hi,
+I am not able to access my shared H drive. Please help me out.
+ 
+Thanks & Regards,
+Ambarish Kumar
+
+2nd resolution: --FAILED-- VM maintenance performed in VM console, user able to access the shared drive post maintenance.
+3rd resolution
+
+--FAILED--
+
+User is not able to access the shared H drive. Let me know if you need any further assistance."
+50,TPE TIS VDI End User Support,"Dear Helpdesk,
+
+Kindly raise one SRQ with the following details, assign to VDI team and confirm:
+
+Short Description: [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT>
+Issue details: Not able to execute scripts from UFT post VDI migration.
+
+Thanks & Regards,
+Bijaylaxmi Sarangi
+","Issue reported: Not able to execute scripts from UFT
+Steps taken to resolve: We hve repaired the UFT 14.0 and the issue is fixed.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes
+",'-[Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT>,'-[Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT>,We hve repaired the UFT 14.0 and the issue is fixed., [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IBMINKOLV00302:- Not able to execute scripts from UFT> [Phase II Nutanix] - <IB
+51,TPE TIS VDI End User Support,"Dear Team,
+ 
+My VDI is having Login issue. I have restarted it multiple times and also my IMDL roles seems fine.
+Please help checking once.
+ 
+IBMINKOLV00695
+ 
+ 
+ 
+Thanks
+Bahni Chakraborty
+ 
+
+","Issue: VDI Login Issue
+Action Taken : No action has been taken. User able to access the VDI after resetting the Citrix receiver.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",VDI Login Issue,"VDI Login Issue Dear Team,
+ 
+My VDI is having Login issue. I have restarted it multiple times and also my IMDL roles seems fine.
+Please help checking once.
+ 
+IBMINKOLV00695
+ 
+ 
+ 
+Thanks
+Bahni Chakraborty
+ 
+
+",,
+52,TPE TIS VDI End User Support,"Good day!
+ 
+After giving my login credentials, I am not able to connect to VDI. I have attached the screenshot below.
+ 
+ 
+ 
+Thanks & Regards,
+Dheebika Venklatesan
+
+","Issue reported: VDI issue
+Steps taken to resolve: Logged off the  user's disconnected session. 
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes 
+",VDI issue,"VDI issue Good day!
+ 
+After giving my login credentials, I am not able to connect to VDI. I have attached the screenshot below.
+ 
+ 
+ 
+Thanks & Regards,
+Dheebika Venklatesan
+
+",Logged off the user's disconnected session.," 
+ 
+ 
+ 
+ 
+
+"
+53,TPE TIS VDI End User Support,"From: Baeten, Frank (contracted) 
+Sent: Wednesday, August 21, 2019 11:47 AM
+To: PMI, IS European Help Desk - Benelux <PMI.ISHelpdeskBenelux@pmi.com>
+Cc: Frank Baeten <frank.baeten@starware.nl>; Huberts, Franklin (contracted) <Franklin.Huberts@contracted.pmi.com>; Croonen, Wout <Wout.Croonen@pmi.com>
+Subject: RE: RDC access 
+
+Hi IS helpdesk,
+
+
+My lextedit install was successful and this still works, but the trace profile and syntax diff software is removed from this folder although it was set that all would remain there.
+(handled by Praveen.Jagadeshan@contracted.pmi.com)
+
+Can you correct this asap ?
+
+ 
+
+
+Many thanks,
+
+Frank
+
+","Issue reported: RDC access 
+Steps taken to resolve: Reinstalled the package.
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, PFA",RDC access ,"RDC access   Hi IS helpdesk,
+
+
+My lextedit install was successful and this still works, but the trace profile and syntax diff software is removed from this folder although it was set that all would remain there.
+(handled by Praveen.Jagadeshan@contracted.pmi.com)
+
+Can you correct this asap ?
+
+ 
+
+
+Many thanks",Reinstalled the package.,"1st resolution: & regards,
+Vikas
+-- IS:PFAKB007618 - User request to re-install the Lextedit
+2nd resolution:
+ISKRPMKRMG010278 - user unable to edit the file through LEXTEDIT
+3rd resolution
+ISKRPMKRMG010976 - User is able to edit the files but unable to login to RDP through LEXTEDIT"
+54,TPE TIS VDI End User Support,"Hi Ambarish,
+
+I am unable to view my VDI home screen, where black screen only displaying. Please raise ticket.
+
+VDI Number: IBMINKOLV00989
+
+Regards
+Bhagyashree
+","Issue:Unable to view window home screen in VDI - IBMINKOLV00989
+Action Taken : VDI was in hung state and same has been rebooted.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment",Unable to view window home screen in VDI - IBMINKOLV00989,"Unable to view window home screen in VDI - IBMINKOLV00989 Hi Ambarish,
+
+I am unable to view my VDI home screen, where black screen only displaying. Please raise ticket.
+
+VDI Number: IBMINKOLV00989
+
+Regards
+Bhagyashree
+",,"1st resolution:
+I have restarted the VDI and informed to user, Now user confirmed that issue resolved.
+2nd resolution:
+
+3rd resolution--- FYI - This issue was related to browser cache."
+55,TPE TIS VDI End User Support,"Hello Team,
+
+Today when I tried to open my SAP logon pad an error popped up. After pressing OK sap logon pad showed nothing.
+
+      
+
+Please help me fix this as soon as possible as I have weekend activities to perform.
+
+Thanks and regards,
+Adhip
+
+
+","Issue reported: SAP logon error
+Steps taken to resolve: We have checked the SAP folder on user profile and few folders were missing. So we have copied the folders form working machine and pasted in that location.
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES. PFA chat history screenshot.",SAP logon error,"SAP logon error Hello Team,
+
+Today when I tried to open my SAP logon pad an error popped up. After pressing OK sap logon pad showed nothing.
+
+      
+
+Please help me fix this as soon as possible as I have weekend activities to perform.
+
+Thanks and regards,
+Adhip
+
+
+",We have checked the SAP folder on user profile and few folders were missing. So we have copied the folders form working machine and pasted in that location.,"1st resolution:»»» We have checked the SAP folder and found that there are many files in the folder. We have removed these files and now it is working fine.
+2nd resolution:
+
+3rd resolution -- VM screen is not working, user logged into SAP through OBS."
+56,TPE TIS VDI End User Support,"Hi Desk,
+ 
+I am unable to login into VDI.
+ 
+ Thanks & Regards,
+Sravya Aitha
+ 
+
+","Issue: VDI is not working
+Action Taken : No action has been taken. User able to access the VDI.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",VDI is not working,"VDI is not working Hi Desk,
+ 
+I am unable to login into VDI.
+ 
+ Thanks & Regards,
+Sravya Aitha
+ 
+
+",,"1st resolution:
+
+2nd resolution:
+
+ 
+--> 
+3rd resolution The VDI is in hung state, it has been restarted."
+57,TPE TIS VDI End User Support,"Hi Raj
+IBMINKOLV01067 IS vdi IS NOT WORKING
+AFTER CLICK ON VDI ICON then nothing happened .
+Please check this VDI issue urgently.","Issue: IBMINKOLV01067 IS vdi IS NOT WORKING
+Action Taken : Upon checking VDI was in unregistered state. We have installed the VDI agent now VDI is looks good and registered in Citrix studio.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",IBMINKOLV01067 IS vdi IS NOT WORKING,"IBMINKOLV01067 IS vdi IS NOT WORKING Hi Raj
+IBMINKOLV01067 IS vdi IS NOT WORKING
+AFTER CLICK ON VDI ICON then nothing happened .
+Please check this VDI issue urgently.",,"1st resolution:
+Thank you,
+Venkatesh.S 
+--> 
+2nd resolution: Screen sharing session has been disconnected.
+3rd resolution
+--> "
+58,TPE TIS VDI End User Support,"Hello Ambarish and Team ,
+
+As per the below mail it's depicted that VDI migration of my VDI (PMIINKOLV00703) has been done last night , After Migration Today I am facing several high impacted issues in My VDI 
+
+1. SQL server can't be connected 
+2. Can't open network shared folders 
+3. Can't connected  to the Remote servers by MSTSC
+4. Every time opening outlook , Visual etc  studio it starting from the first time after installation
+There might have other issues as well .
+5. All the sticky notes information has be deleted.
+
+Please assigned a specific team by Creating a SRQ Let me know the SRQ#
+
+Thanks 
+Sumit 
+
+
+From: Ghosh, Tanusree (contracted) 
+Sent: Friday, August 23, 2019 1:31 PM
+To: Samui, Sumit (contracted) <Sumit.Samui@contracted.pmi.com>
+Subject: FW: Regarding VDI Migration scheduled for 22nd August 
+
+
+
+Regards,
+Tanusree Ghosh, CSM
+IBM, Global Business Service
+Phone  : +91 33 7119 5170
+DLF IT Park, Tower B, 3rd Floor
+Rajarhat; New Town;
+Kolkata - 700156
+
+From: Maitra, Ambarish (contracted) 
+Sent: Thursday, August 22, 2019 10:18 AM
+To: Mazumder, Pritam (contracted) <Pritam.Mazumder@contracted.sampoerna.com>; Mitra, Arghya (contracted) <Arghya.Mitra@contracted.sampoerna.com>; Kathuria, Aman (contracted) <Aman.Kathuria@contracted.pmi.com>; Bhowmik, Adhip (contracted) <Adhip.Bhowmik@contracted.pmi.com>; Sen, Goutam (contracted) <Goutam.Sen@contracted.pmi.com>; Sharma, Pankaj (contracted) <Pankaj.Sharma@contracted.pmi.com>; Nandi, Kingshuk (contracted) <Kingshuk.Nandi@contracted.pmi.com>; Faraz, Motasim (contracted) <Motasim.Faraz@contracted.sampoerna.com>; Alluri, Ranjit Kumar (contracted) <RanjitKumar.Alluri@contracted.sampoerna.com>; Sneha, Saumya (contracted) <Saumya.Sneha@contracted.sampoerna.com>; Guha, Debabrata (contracted) <Debabrata.Guha@contracted.sampoerna.com>; Goswami, Atanu (contracted) <Atanu.Goswami@contracted.pmi.com>; Samui, Sumit (contracted) <Sumit.Samui@contracted.pmi.com>; Prakash, Ravi (contracted) <Ravi.Prakash@contracted.sampoerna.com>
+Cc: Chakraborty, Nilotpal (contracted) <Nilotpal.Chakraborty@contracted.sampoerna.com>; Paul, Harekrishna (contracted) <Harekrishna.Paul@contracted.pmi.com>; Jain, Narendra (contracted) <Narendra.Jain@contracted.pmi.com>; Guha, Aniruddha (contracted) <Aniruddha.Guha@contracted.pmi.com>; Sur, Sougata (contracted) <Sougata.Sur@contracted.sampoerna.com>; Saha, Rupsa (contracted) <Rupsa.Saha@contracted.pmi.com>; Sengupta, Avik (contracted) <Avik.Sengupta@contracted.sampoerna.com>; Das, Manjari (contracted) <Manjari.Das@contracted.pmi.com>; Ghosh, Tanusree (contracted) <Tanusree.Ghosh@contracted.pmi.com>; Banerjee, Tapas (contracted) <Tapas.Banerjee@contracted.sampoerna.com>
+Subject: RE: Regarding VDI Migration scheduled for 22nd August 
+
+Dear All,
+
+This is to inform you all that migration of below VDIs have been scheduled on today at 11:30 PM IST. Migration activity will take 6-8 hours to complete; During this time, user can't login to VDI machine. Also move your data from VDI to shared drive to avoid any accidental data loss.
+
+Thanks and Regards
+Ambarish Maitra
+IT Support Executive
+From: Maitra, Ambarish (contracted) 
+Sent: Monday, August 19, 2019 10:30 AM
+To: Mazumder, Pritam (contracted) <Pritam.Mazumder@contracted.sampoerna.com>; Mitra, Arghya (contracted) <Arghya.Mitra@contracted.sampoerna.com>; Kathuria, Aman (contracted) <Aman.Kathuria@contracted.pmi.com>; Bhowmik, Adhip (contracted) <Adhip.Bhowmik@contracted.pmi.com>; Sen, Goutam (contracted) <Goutam.Sen@contracted.pmi.com>; Sharma, Pankaj (contracted) <Pankaj.Sharma@contracted.pmi.com>; Nandi, Kingshuk (contracted) <Kingshuk.Nandi@contracted.pmi.com>; Faraz, Motasim (contracted) <Motasim.Faraz@contracted.sampoerna.com>; Alluri, Ranjit Kumar (contracted) <RanjitKumar.Alluri@contracted.sampoerna.com>; Sneha, Saumya (contracted) <Saumya.Sneha@contracted.sampoerna.com>; Guha, Debabrata (contracted) <Debabrata.Guha@contracted.sampoerna.com>; Goswami, Atanu (contracted) <Atanu.Goswami@contracted.pmi.com>; Samui, Sumit (contracted) <Sumit.Samui@contracted.pmi.com>; Prakash, Ravi (contracted) <Ravi.Prakash@contracted.sampoerna.com>
+Cc: Chakraborty, Nilotpal (contracted) <Nilotpal.Chakraborty@contracted.sampoerna.com>; Paul, Harekrishna (contracted) <Harekrishna.Paul@contracted.pmi.com>; Jain, Narendra (contracted) <Narendra.Jain@contracted.pmi.com>; Guha, Aniruddha (contracted) <Aniruddha.Guha@contracted.pmi.com>; Sur, Sougata (contracted) <Sougata.Sur@contracted.sampoerna.com>; Saha, Rupsa (contracted) <Rupsa.Saha@contracted.pmi.com>; Sengupta, Avik (contracted) <Avik.Sengupta@contracted.sampoerna.com>; Das, Manjari (contracted) <Manjari.Das@contracted.pmi.com>; Ghosh, Tanusree (contracted) <Tanusree.Ghosh@contracted.pmi.com>; Banerjee, Tapas (contracted) <Tapas.Banerjee@contracted.sampoerna.com>
+Subject: Regarding VDI Migration scheduled for 22nd August 
+
+Dear All,
+
+This is to inform you all that below VDI migration have been scheduled on below mentioned date and time. 
+
+Please follow below suggestions to complete the migration activity properly…
+1. Please move all VDI data to Shared drive (H: Drive) (Also take backup of sticky note and browser bookmark)
+2. Migration activity will take 6-8 hours to complete; During this time, user can't login to VDI machine.
+
+VDI Name User Name UserID Supervisor Schedule Date Schedule Start Time
+IBMINKOLV01233 Mazumder, Pritam (contracted) pmazumde1  22-Aug 11:30 PM IST
+IBMINKOLV01044 Mitra, Arghya (contracted) amitra6  22-Aug 11:30 PM IST
+IBMINKOLV00948 Kathuria, Aman (contracted) akathuri Nilotpal Chakraborty 22-Aug 11:30 PM IST
+IBMINKOLV00376 Bhowmik, Adhip (contracted) abhowmik Nilotpal Chakraborty 22-Aug 11:30 PM IST
+IBMINKOLV00394 Sen, Goutam (contracted) gsen Harekrishna Paul 22-Aug 11:30 PM IST
+IBMINKOLV00383 Sharma, Pankaj (contracted) psharma Narendra K Jain 22-Aug 11:30 PM IST
+IBMINKOLV00639 Nandi, Kingshuk (contracted) knandi Aniruddha Guha 22-Aug 11:30 PM IST
+IBMINKOLV00866 Faraz, Motasim (contracted) mfaraz Sougata Sur  22-Aug 11:30 PM IST
+IBMINKOLV00666 Alluri, Ranjit Kumar (contracted) ralluri Rupsa Saha  22-Aug 11:30 PM IST
+IBMINKOLV00447 Sneha, Saumya (contracted) ssneha Avik Sengupta 22-Aug 11:30 PM IST
+IBMINKOLV00654 Guha, Debabrata (contracted) dguha Manjari Das  22-Aug 11:30 PM IST
+IBMINKOLV00454 GOSWAMI, ATANU (contracted) agoswami  22-Aug 11:30 PM IST
+IBMINKOLV00703 Samui, Sumit (contracted) ssamui Tanusree Ghosh 22-Aug 11:30 PM IST
+IBMINKOLV00764 Prakash, Ravi (contracted) rprakash Tapas Banerjee 22-Aug 11:30 PM IST
+
+Contact Person For any query : Sougata Sur and Ambarish Maitra
+
+Thanks and Regards
+Ambarish Maitra
+IT Support Executive
+
+","Issue reported: VDI migration of my VDI (PMIINKOLV00703)  application issues.
+Steps taken to resolve: We have checked user VDI and reset his profile. After that all the issues has been resolved. Sticky notes data can't be recovered and this has been conveyed to user already.He has confirmed in chat regarding that.
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES. PFA chat history screenshot,.",VDI migration of my VDI (PMIINKOLV00703)  application issues.,"VDI migration of my VDI (PMIINKOLV00703)  application issues.  Regards,
+Tanusree Ghosh, CSM
+IBM, Global Business Service
+Phone  : +91 33 7119 5170
+DLF IT Park, Tower B, 3rd Floor
+Rajarhat; New Town;
+Kolkata - 700156 Dear All,
+
+This is to inform you all that migration of below VDIs have been scheduled on today at 11:30 PM IST. Migration activity will take 6-8 hours to complete; During this time, user can't login to VDI machine. Also move your data from VDI to shared drive to avoid any accidental data loss.
+
+Thanks Dear All,
+
+This is to inform you all that below VDI migration have been scheduled on below mentioned date and time. 
+
+Please follow below suggestions to complete the migration activity properly…
+1. Please move all VDI data to Shared drive (H: Drive) (Also take backup of sticky note and browser bookmark)
+2. Migration activity will take 6-8 hours to complete; During this time, user can't login to VDI machine.
+
+VDI Name User Name UserID Supervisor Schedule Date Schedule Start Time
+IBMINKOLV01233 Mazumder, Pritam (contracted) pmazumde1  22-Aug 11:30 PM IST
+IBMINKOLV01044 Mitra, Arghya (contracted) amitra6  22-Aug 11:30 PM IST
+IBMINKOLV00948 Kathuria, Aman (contracted) akathuri Nilotpal Chakraborty 22-Aug 11:30 PM IST
+IBMINKOLV00376 Bhowmik, Adhip (contracted) abhowmik Nilotpal Chakraborty 22-Aug 11:30 PM IST
+IBMINKOLV00394 Sen, Goutam (contracted) gsen Harekrishna Paul 22-Aug 11:30 PM IST
+IBMINKOLV00383 Sharma, Pankaj (contracted) psharma Narendra K Jain 22-Aug 11:30 PM IST
+IBMINKOLV00639 Nandi, Kingshuk (contracted) knandi Aniruddha Guha 22-Aug 11:30 PM IST
+IBMINKOLV00866 Faraz, Motasim (contracted) mfaraz Sougata Sur  22-Aug 11:30 PM IST
+IBMINKOLV00666 Alluri, Ranjit Kumar (contracted) ralluri Rupsa Saha  22-Aug 11:30 PM IST
+IBMINKOLV00447 Sneha, Saumya (contracted) ssneha Avik Sengupta 22-Aug 11:30 PM IST
+IBMINKOLV00654 Guha, Debabrata (contracted) dguha Manjari Das  22-Aug 11:30 PM IST
+IBMINKOLV00454 GOSWAMI, ATANU (contracted) agoswami  22-Aug 11:30 PM IST
+IBMINKOLV00703 Samui, Sumit (contracted) ssamui Tanusree Ghosh 22-Aug 11:30 PM IST
+IBMINKOLV00764 Prakash, Ravi (contracted) rprakash Tapas Banerjee 22-Aug 11:30 PM IST
+
+Contact Person For any query : Sougata Sur and Ambarish Maitra
+
+Thanks",We have checked user VDI and reset his profile. After that all the issues has been resolved. Sticky notes data can't be recovered and this has been conveyed to user already.He has confirmed in chat regarding that.,"1st resolution: & Regards
+Pritam Mazumder | Lead Technical PMO | IBM India Pvt. Ltd.
+
+2nd resolution: -- Thanks & RegardsPritam Mazumder | Lead Technical PMO | IBM India Pvt. Ltd.
+3rd resolution
+-- Hello Team,
+This is to inform you that the VDI migration of below mentioned user's has been completed successfully.
+On behalf of the user, please confirm if there are any issues with the VDI.
+Thanking You,
+User ID : IBMLINKOLV012431
+The user has raised a SRQ SRQ00Q00127431 related to this issue.
+I have checked the VDI and found that the screen sharing is not working and console session is getting disconnected. I have restarted the VDI and the same is working fine now.
+Thanks & Regards
+Pritam Mazumder | Lead Technical PMO | IBM India Pvt. Ltd.
+"
+59,TPE TIS VDI End User Support,Please look into my VDI page not opening,"Issue: VDI page not opening 
+Action Taken : Upon checking VDI was unregistered state and same has been fixed
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment",VDI page not opening ,VDI page not opening  Please look into my VDI page not opening,,"1st resolution:. It is showing the following error message. Error while opening the VDI 
+
+2nd resolution: -- VM was rebooted in the middle of the maintenance window post which this issue was resolved.
+3rd resolution
+The VDI is up and running fine now"
+60,TPE TIS VDI End User Support,"From: Deep, Akash (contracted) 
+Sent: Tuesday, September 3, 2019 10:21 AM
+To: PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Cc: Biswas, Anindita (contracted) <Anindita.Biswas@contracted.sampoerna.com>; Banerjee, Soumyaditya (contracted) <Soumyaditya.Banerjee@contracted.sampoerna.com>
+Subject: VDI not working
+
+Hi Team,
+
+I'm facing problem in opening following VDI after operating system upgrade :-
+• IBMINKOLV01029
+• IBMINKOLV01028
+• IBMINKOLV01007
+• IBMINKOLV01006
+• IBMINKOLV01005
+
+Kindly look into it and do the needful.
+
+
+Thanks
+Akash
+","Issue: [Self Service Inplace Upgrade] - <IBMINKOLV01029, IBMINKOLV01028, IBMINKOLV01007, IBMINKOLV01006 & IBMINKOLV01005 - VDI Not opening>
+Action Taken : We have reinstalled the SCCM client and re-initiated the In-Place upgrade.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ","[Self Service Inplace Upgrade] - <IBMINKOLV01029, IBMINKOLV01028, IBMINKOLV01007, IBMINKOLV01006 & IBMINKOLV01005 - VDI Not opening>","[Self Service Inplace Upgrade] - <IBMINKOLV01029, IBMINKOLV01028, IBMINKOLV01007, IBMINKOLV01006 & IBMINKOLV01005 - VDI Not opening>  Hi Team,
+
+I'm facing problem in opening following VDI after operating system upgrade :-
+• IBMINKOLV01029
+• IBMINKOLV01028
+• IBMINKOLV01007
+• IBMINKOLV01006
+• IBMINKOLV01005
+
+Kindly look into it and do the needful.
+
+
+Thanks",,"1st resolution: & Regards
+[IBM] - Puneet Pal 
+
+2nd resolution: -- Fax Message sent to user for confirmation.
+3rd resolution
+Thanks for the information. I have checked the server IBMINKOLV01005 and found that is down. I have restarted the server and checked. User is able to login to the VDI now. So we are closing this ticket."
+61,TPE TIS VDI End User Support,"Hi Helpdesk ,
+
+After update i can not bale to log in , showing this error.
+
+Thanks
+Manoj mishra
+","Issue reported: [Self Service Inplace Upgrade] - <IBMINKOLV00371 - Not able to login to VDI>
+Steps taken to resolve: Reinstalled the VDA agent.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, PFA.
+",[Self Service Inplace Upgrade] - <IBMINKOLV00371 - Not able to login to VDI>,"[Self Service Inplace Upgrade] - <IBMINKOLV00371 - Not able to login to VDI> Hi Helpdesk ,
+
+After update i can not bale to log in , showing this error.
+
+Thanks
+Manoj mishra
+",Reinstalled the VDA agent.,"1st resolution:
+2nd resolution: ---> FYI, user's session is hung up in the console, so we have restarted the browser.
+3rd resolution
+[Self service inplace upgrade] - <IBMINKOLV00372 - Unable to login to VDI> Hi Helpdesk,
+As per your request, attached is the screen shot of error message. User is able to login now. Please let us know if you need any other information."
+62,TPE TIS VDI End User Support,"Dear Team,
+
+Please assist with the below error coming while accessing VDI:
+
+ 
+
+
+Thanks and regards.
+
+Santosh Kumar Gupta
+IBM GBS Global Delivery
+Cell: +91 9903366800
+Mail: santosgu@in.ibm.com
+","Issue reported: VDI not opening
+Steps taken to resolve: VDA agent has been reinstalled.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, PFA
+",VDI not opening,"VDI not opening Dear Team,
+
+Please assist with the below error coming while accessing VDI:
+
+ 
+
+
+Thanks and regards.
+
+Santosh Kumar Gupta
+IBM GBS Global Delivery
+Cell: +91 9903366800
+Mail: santosgu@in.ibm.com
+",VDA agent has been reinstalled.,"1st resolution: 
+We have disabled maintenance mode for the VDI
+2nd resolution:--> 
+3rd resolution--> "
+63,TPE TIS VDI End User Support,"Dear Team,
+
+Could you please check below error while trying to opening the VDI :
+
+ 
+VDI Details are :
+
+VDI ID : PMIINKOL00827
+User name : PMI\adas
+
+Please check and resolve the issue. Let me know , if any more information is required.
+
+Thanks and Regards,
+Abhishek Das
+Advisory System Analyst
+IBM , Global Business Services India
+DLF IT Park,Tower B , 3rd Floor
+New Town, Rajarhat, Kolkata 700156 , India
+91-(0)98303-02040(M)
+e-mail : das.abhishek@in.ibm.com
+","Issue reported: User not able to login in VDI
+Steps taken to resolve: Upon checking, the VDI is connected to the console. Hence user is not able to login the VDI. We have logged out the console session and restarted the VDI to fix the issue. User confirmed that he is able to login to the VDI,PFA. Hence we are closing this ticket.
+Did you use KB article or updated KB?N/A
+PRB or CHANGE has been created: N/A
+HAS User confirmed: Yes,PA",User not able to login in VDI,"User not able to login in VDI Dear Team,
+
+Could you please check below error while trying to opening the VDI :
+
+ 
+VDI Details are :
+
+VDI ID : PMIINKOL00827
+User name : PMI\adas
+
+Please check and resolve the issue. Let me know , if any more information is required.
+
+Thanks and Regards,
+Abhishek Das
+Advisory System Analyst
+IBM , Global Business Services India
+DLF IT Park,Tower B , 3rd Floor
+New Town, Rajarhat, Kolkata 700156 , India
+91-(0)98303-02040(M)
+e-mail : das.abhishek@in.ibm.com
+","Upon checking, the VDI is connected to the console. Hence user is not able to login the VDI. We have logged out the console session and restarted the VDI to fix the issue. User confirmed that he is able to login to the VDI,PFA. Hence we are closing this ticket.","1st resolution:--> Upon checking, the VDI is in unregistered state. We have registered the VDI and then user confirmed to work fine. Hence we are closing this ticket.
+2nd resolution:--> Upon checking, the VDI is in unregistered state. We have registered the VDI and then user confirmed to work fine. Hence we are closing this ticket.
+3rd resolution--> Upon checking, the VDI is in unregistered state. We have registered the VDI and then user confirmed to work fine. Hence we are closing this ticket."
+64,TPE TIS VDI End User Support,"Hi Team,
+
+I am getting the back screen while opening the below VDIs:
+
+1. IBMINKOLV00993
+2. IBMINKOLV01025
+3. IBMINKOLV01026
+4. IBMINKOLV01027
+
+I have re-started the VDI, however the issue is still there.
+
+Can you please raise the SRQ and resolve this issue.
+
+Thanks & regards,
+Kanhaiya Melgandi
+","Issue reported: Black screen is appearing while opening the VDI
+Steps taken to resolve: Upon checking, user confirmed that he is able to login to all the VDI's without any issue. PFA. Hence we are closing this ticket.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes,PFA",Black screen is appearing while opening the VDI,"Black screen is appearing while opening the VDI Hi Team,
+
+I am getting the back screen while opening the below VDIs:
+
+1. IBMINKOLV00993
+2. IBMINKOLV01025
+3. IBMINKOLV01026
+4. IBMINKOLV01027
+
+I have re-started the VDI, however the issue is still there.
+
+Can you please raise the SRQ and resolve this issue.
+
+Thanks & regards,
+Kanhaiya Melgandi
+","Upon checking, user confirmed that he is able to login to all the VDI's without any issue. PFA. Hence we are closing this ticket.","1st resolution:IBM India Private Limited
+
+2nd resolution: -- (END) -- From the IBM PFA, it has been confirmed that user is able to login without any issue. We will be closing this ticket.
+3rd resolutionHi Kanhaiya,We have checked the VDI and found one of the HD is failed, we have replaced the same and the issue has resolved."
+65,TPE TIS VDI End User Support,"Hi Ambarish,
+
+I am getting black screen after opening my VDI (IBMINKOLV00987). Please raise SRQ to resolve the issue.
+
+Regards
+Bhagyashree
+","Issue reported:Unable to open VDI (IBMINKOLV00987)
+Steps taken to resolve: User had disconnected session available, we have logged of them. 
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: Yes, email conversation attached. 
+",Unable to open VDI (IBMINKOLV00987),"Unable to open VDI (IBMINKOLV00987) Hi Ambarish,
+
+I am getting black screen after opening my VDI (IBMINKOLV00987). Please raise SRQ to resolve the issue.
+
+Regards
+Bhagyashree
+","User had disconnected session available, we have logged of them.","1st resolution:
+END] user VDI is in hung state and after restarting the VDI, issue is fixed.
+2nd resolution:
+IBMINKOLV00987 has been down for maintenance.
+3rd resolution 
+Pls check the status of VDI's"
+66,TPE TIS VDI End User Support,"Dear Team,
+
+My VDI is extreemly slow. not able to open anythingPlease check ..Even in B Port it is not working.
+
+User Sganguly
+
+regards,
+shiv
+","Issue reported: VDI slow
+Steps taken to resolve: Upon checking the ICA RTT of the user is high, after relaunching the session user didn't face the slowness issue. The same is confirmed by the user. PFA. Hence we are closing this ticket.
+Did you use KB article or updated KB? N/A
+PRB or CHANGE has been created: N/A
+HAS User confirmed: Yes,PFA",VDI slow,"VDI slow Dear Team,
+
+My VDI is extreemly slow. not able to open anythingPlease check ..Even in B Port it is not working.
+
+User Sganguly
+
+regards,
+shiv
+","Upon checking the ICA RTT of the user is high, after relaunching the session user didn't face the slowness issue. The same is confirmed by the user. PFA. Hence we are closing this ticket.","1st resolution:
+2nd resolution: -- Upgraded the VDI to the latest version and issue resolved.
+3rd resolution
+
+-- FYI, User is able to access the VDI and B port. The issue has been fixed in PMR 13897700."
+67,TPE TIS VDI End User Support,"Dear team 
+user is not able to login in VDI.
+showing temporarily unavailable 
+could you please check","Issue reported:unable to login in VDI.
+Steps taken to resolve: Upon checking, the maintenance mode of the VDI is enabled. We have disabled the VDI's maintenance mode, and user is able to login to the VDI. The same is confirmed by the user. Hence we are closing this ticket.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes,PFA",unable to login in VDI.,"unable to login in VDI. Dear team 
+user is not able to login in VDI.
+showing temporarily unavailable 
+could you please check","Upon checking, the maintenance mode of the VDI is enabled. We have disabled the VDI's maintenance mode, and user is able to login to the VDI. The same is confirmed by the user. Hence we are closing this ticket.","1st resolution: and fix the issue 
+kindly confirm
+2nd resolution: ---> User able to login now, Issue resolved.
+3rd resolution--> User VDI is in unregistered state, informed to PFA team to fix the issue."
+68,TPE TIS VDI End User Support,"Hello Desk,
+
+I am getting the below error while logging into the VDI.
+
+Please do the needful. Username : adutta2
+
+ 
+Thanks and Regards,
+Apratim Dutta
+IBM India Pvt Ltd
+# +91 9433436943
+","Issue reported: Not able to access VDI
+Steps taken to resolve: Upon checking, maintenance mode has been enabled for the user's VDI. We have disabled the maintenance mode and now user is able to access the VDI. The same has been confirmed by the user. PFA. Hence we are closing this ticket. 
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: yes,PFA",Not able to access VDI,"Not able to access VDI Hello Desk,
+
+I am getting the below error while logging into the VDI.
+
+Please do the needful. Username : adutta2
+
+ 
+Thanks and Regards,
+Apratim Dutta
+IBM India Pvt Ltd
+# +91 9433436943
+","Upon checking, maintenance mode has been enabled for the user's VDI. We have disabled the maintenance mode and now user is able to access the VDI. The same has been confirmed by the user. PFA. Hence we are closing this ticket.","1st resolution:
+2nd resolution:
+
+3rd resolution --FAEKR ALI ALAM--
+--> "
+69,TPE TIS VDI End User Support,"Dear team,
+
+Request you to please check this VDI issue urgently.
+Thanks & Regards,
+
+    Sourav Das
+
+BT/IT - GBS CIC ( Client Innovation Centre )India
+https://ibm.biz/BTITIndia
+
+
+
+ 
+
+
+
+
+
+From:        Sayan Bhuiya/India/IBM
+To:        Sourav Das8/India/Contr/IBM@IBMIN, Ambarish T Maitra/India/Contr/IBM@IBMIN
+Cc:        Rahul Nandi/India/IBM@IBMIN, Ashwini Harish/India/IBM@IBMIN, Anamika Kumari011/India/IBM@IBMIN
+Date:        09/19/2019 03:24 PM
+Subject:        VDI issues
+________________________________________
+
+
+Dear Team,
+
+Looks like my VDI was upgraded last night around 1 AM. And even now I cannot login into my VDI, it should not take more than 12 hours for an migration/upgrade.
+
+It is still showing planned maintainence. Please look into the matter.
+
+ 
+Thank you in Advance,
+
+Kind Regards,
+Sayan
+
+
+","Issue reported: VDI issues.
+Steps taken to resolve:Re-installed the VDA agent.
+Did you use KB article or updated KB?na
+PRB or CHANGE has been created: na
+HAS User confirmed: yes, PFA",VDI issues,"VDI issues  ________________________________________
+
+
+Dear Team,
+
+Looks like my VDI was upgraded last night around 1 AM. And even now I cannot login into my VDI, it should not take more than 12 hours for an migration/upgrade.
+
+It is still showing planned maintainence. Please look into the matter.
+
+ 
+Thank you in Advance,
+
+Kind Regards,
+Sayan",Re-installed the VDA agent.,"1st resolution: Banerjee
+
+END]---> 
+2nd resolution:---> We have done the VDA agent reset and user able to login to his VDI.
+3rd resolution-------------------------------------------------------------------------------------------------------------------------------------Hi,Following is the screen shot of the error message - ""Unable to retrieve the state of the disconnected network resource: /"
+70,TPE TIS VDI End User Support,"Hi Helpdesk,
+ 
+I received a mail as to mandatorily Upgrade my VDI IBMINKOLV01141 to Windows 10 V 1803. I had upgraded the WINDOWS and now I am unable to login to the VDI.
+ 
+On entering the Login credentials, I get the message as ""The desktop Windows 10 - Dedicated -IBM is temporarily unavailable due to planned maintenance"".
+ 
+Kindly look into this issue.
+ 
+USER ID : VNAGARAJ
+VDI ID   : IBMINKOLV01141 
+ 
+I have attached the screenshot of the page after logging into Citrix receiver.
+ 
+Thanks and Regards,
+Vaishnavi N.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+","Issue reported: get the message as ""The desktop Windows 10 - Dedicated -IBM is temporarily unavailable due to planned maintenance"".
+Steps taken to resolve:  In -place upgrade done successfully
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed; yes, Please find below work notes.
+","get the message as ""The desktop Windows 10 - Dedicated -IBM is temporarily unavailable due to planned maintenance"".","get the message as ""The desktop Windows 10 - Dedicated -IBM is temporarily unavailable due to planned maintenance"". Hi Helpdesk,
+ 
+I received a mail as to mandatorily Upgrade my VDI IBMINKOLV01141 to Windows 10 V 1803. I had upgraded the WINDOWS and now I am unable to login to the VDI.
+ 
+On entering the Login credentials, I get the message as ""The desktop Windows 10 - Dedicated -IBM is temporarily unavailable due to planned maintenance"".
+ 
+Kindly look into this issue.
+ 
+USER ID : VNAGARAJ
+VDI ID   : IBMINKOLV01141 
+ 
+I have attached the screenshot of the page after logging into Citrix receiver.
+ 
+Thanks and Regards,
+Vaishnavi N.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+",In -place upgrade done successfully,"1st resolution: 
+ 
+
+--> In -place upgrade done successfully
+2nd resolution:--> As per the conversation with user, He has confirmed that he is able to access the VDI without any issue. Hence we are closing this ticket.
+3rd resolution--> As per the conversation with user, He has confirmed that he is able to access the VDI without any issue. Hence we are closing this ticket."
+71,TPE TIS VDI End User Support,"Hi
+My VDI is not working and it shows an error.
+VDI ID: ugarg
+ 
+Regards
+Udayan Garg
+
+","Issue reported: VDI Not Working.
+Steps taken to resolve: turned off VDI maintenance mode.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, PF from the below work notes.
+",VDI Not Working,"VDI Not Working Hi
+My VDI is not working and it shows an error.
+VDI ID: ugarg
+ 
+Regards
+Udayan Garg
+
+",turned off VDI maintenance mode.,"1st resolution:
+--> 
+2nd resolution: the VDI is in unregistered state, hence disconnected the session.
+3rd resolution
+--> "
+72,TPE TIS VDI End User Support,"Hello,
+
+Data has been lost from my folder after VDI upgradation has been done. Please find the attachments.
+
+Thanks,
+Brij Bhushan Pandey
+","Issue reported: Data has been lost from share drive
+Steps taken to resolve: We have checked on user home drive with the help of Windows server team and there is no data is available. This information has been conveyed to user and presently we are closing this ticket.
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES.",Data has been lost from share drive,"Data has been lost from share drive Hello,
+
+Data has been lost from my folder after VDI upgradation has been done. Please find the attachments.
+
+Thanks,
+Brij Bhushan Pandey
+",We have checked on user home drive with the help of Windows server team and there is no data is available. This information has been conveyed to user and presently we are closing this ticket.,"1st resolution:+91-9709790796
+Note : User has already raised a request SRQ00371381
+2nd resolution:
+--> data has been recovered from the share drive.
+3rd resolution
+--> checked - all the attached files are available and accessible. User confirmed to close the SRQ."
+73,TPE TIS VDI End User Support,"Dears
+
+My colleague in CC (Subhajit) is facing issue in logging VDI.
+
+VDI ID: IBMINKOLV00963
+
+Could you please help him ?
+
+Thanks in Advance.
+Regards
+Charanjeet
+","
+Issue: User not able to access VDI properly. VDI became very slow. 
+Action Taken : No action has been taken. User able to access the VDI and working without any issue.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below attachment.  ",User not able to access VDI properly. VDI became very slow. ,"User not able to access VDI properly. VDI became very slow.  Dears
+
+My colleague in CC (Subhajit) is facing issue in logging VDI.
+
+VDI ID: IBMINKOLV00963
+
+Could you please help him ?
+
+Thanks in Advance.
+Regards
+Charanjeet
+",,"1st resolution:--> 
+2nd resolution: User VDI is in hung state, we have restarted the VDI.
+3rd resolution--> Upon checking, user confirmed that he is able to access the VDI and issue is resolved."
+74,TPE TIS VDI End User Support,"Hello Ambarish, 
+
+
+My VDI is really slow and it's very difficult to work like this. Can you please help?
+
+
+Thanks
+Neha 
+","Issue reported: VDI slowness issue
+Steps taken to resolve: The user session is in disconnected state. We have restarted the VDI and informed user to login to the VDI and validate if still issue persists. User has confirmed to close the ticket. Please find the below work notes. Hence we are closing this ticket.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes, Please find the below work notes.",VDI slowness issue,"VDI slowness issue Hello Ambarish, 
+
+
+My VDI is really slow and it's very difficult to work like this. Can you please help?
+
+
+Thanks
+Neha 
+",The user session is in disconnected state. We have restarted the VDI and informed user to login to the VDI and validate if still issue persists. User has confirmed to close the ticket. Please find the below work notes. Hence we are closing this ticket.,"1st resolution:
+IT worked fine for me. I checked network and this issue is resolved.
+2nd resolution: ---> 
+3rd resolution
+"
+75,TPE TIS VDI End User Support,"Hi Team,
+
+I am not able to open VDI from last 3 hrs. Can you please do the needful. Please find the attached screen.
+
+Thanks & regards
+Ashis Das
+
+","Issue: VDI Issue
+Action Taken :  We have rebooted the VDI to fix the issue. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below attachment. ",VDI Issue,"VDI Issue Hi Team,
+
+I am not able to open VDI from last 3 hrs. Can you please do the needful. Please find the attached screen.
+
+Thanks & regards
+Ashis Das
+
+",,"1st resolution:
+--> 
+2nd resolution: VM was in hung state, we have restarted the VDI.
+3rd resolution
+
+"
+76,TPE TIS VDI End User Support,"Dear HD,
+
+While working on VDI by logging into VPN - due to network connectivity , my VDI hung. I tried many ways to disconnect the VPN , but  it  was not responding. Below is the screen shot of the same :
+
+ 
+
+Since VPN was connected at the time time of network failure , I am facing problem on reconnecting my VDI again. Could you please urgently raise a SRQ and request someone to look into it.
+
+User name : adas
+VDI details : IBMINKOLVDIV00827
+
+Please let me know , if you have any query.
+
+
+
+Thanks and Regards,
+Abhishek Das
+Advisory System Analyst
+IBM , Global Business Services India
+DLF IT Park,Tower B , 3rd Floor
+New Town, Rajarhat, Kolkata 700156 , India
+91-(0)98303-02040(M)
+e-mail : das.abhishek@in.ibm.com
+","Issue reported: VDI not starting
+Steps taken to resolve: shared the console (of VDI: IBMINKOLV00827)connection with user and user logged into VPN.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed:  yes PFA",VDI not starting,"VDI not starting Dear HD,
+
+While working on VDI by logging into VPN - due to network connectivity , my VDI hung. I tried many ways to disconnect the VPN , but  it  was not responding. Below is the screen shot of the same :
+
+ 
+
+Since VPN was connected at the time time of network failure , I am facing problem on reconnecting my VDI again. Could you please urgently raise a SRQ and request someone to look into it.
+
+User name : adas
+VDI details : IBMINKOLVDIV00827
+
+Please let me know , if you have any query.
+
+
+
+Thanks and Regards,
+Abhishek Das
+Advisory System Analyst
+IBM , Global Business Services India
+DLF IT Park,Tower B , 3rd Floor
+New Town, Rajarhat, Kolkata 700156 , India
+91-(0)98303-02040(M)
+e-mail : das.abhishek@in.ibm.com
+",shared the console (of VDI: IBMINKOLV00827)connection with user and user logged into VPN.,"1st resolution:
+--> VM was in hung state, had a screen sharing with user and fix the issue. User confirmed that he is able to login to the VDI. Hence we are closing this ticket.
+2nd resolution: --> 
+3rd resolution--> As per the request from user, we have logged out the user out of the disconnected session. User confirmed that he is able to connect the disconnected session now. Hence we are closing this ticket."
+77,TPE TIS VDI End User Support,"User not able to login to VDI
+
+VDI Icon is showing loading for longtime but it's not opening. Please check this issue urgently.","Issue: User not able to login to VDI
+Action Taken : Upon checking VDI was in unregistered state due to VPN connection and same has been fixed after rebooting. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",User not able to login to VDI,"User not able to login to VDI User not able to login to VDI
+
+VDI Icon is showing loading for longtime but it's not opening. Please check this issue urgently.",,"1st resolution:
+
+Thanks and Regards,
+
+Hari Prabu
+
+hprabu.p@sungroup.com""> hprabu.p
+2nd resolution:--> user is able to login to VDI console.
+3rd resolution--> user is able to login to VDI console. Thanks & regards,Manoj--Manoj JK -VMware Premier Field Engineer Team Lead - IndiaEND--> user logged into the VDI console, screen sharing request sent to him."
+78,TPE TIS VDI End User Support,Unable to map the location of MyDocuments to Onedrive,"Issue reported: Unable to map the location of MyDocuments to Onedrive
+Steps taken to resolve: user profile has been reset to fix the issue. 
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, email conversation attached. 
+",Unable to map the location of MyDocuments to Onedrive,Unable to map the location of MyDocuments to Onedrive Unable to map the location of MyDocuments to Onedrive,user profile has been reset to fix the issue.,"1st resolution: - we are able to map the location of user profile folder and user personal files. - User profile is on drive E:\\
+2nd resolution: - Personal file is on drive F:\\
+3rd resolution
+I checked the state of the user's OneDrive folder and found that the folder has been deleted. Hence, I have attached a screen shot of the same."
+79,TPE TIS VDI End User Support,"Shared mail box not opening. Showing error message ""Not responding"". 
+
+""PMI Global SAP, Transport Administrators"" <TransportAdministrators.PMIGlobalSAP@pmi.com> 
+","Issue: Shared mail box not opening
+Action Taken :  Shared mailbox is migrated to 0365 so please advised the user to use webmail.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",Shared mail box not opening,"Shared mail box not opening Shared mail box not opening. Showing error message ""Not responding"". 
+
+""PMI Global SAP, Transport Administrators"" <TransportAdministrators.PMIGlobalSAP@pmi.com> 
+",,"1st resolution:
+2nd resolution:--- 
+This is due to server maintenance work in progress. The server has been restarted and now mail is working fine. User has confirmed the same.
+3rd resolution
+"
+80,TPE TIS VDI End User Support,"
+
+From: Alega, Marijo U. [mailto:marijo.u.alega@accenture.com] 
+Sent: Friday, November 29, 2019 3:58 PM
+To: PMI, IS European Help Desk - Lausanne <ISEuropeanHelpDesk-Laus.PMI@pmi.com>
+Cc: Buzzanca, Giusy <giusy.buzzanca@avanade.com>; ATCP.CGS.PMI.GPMS <ATCP.CGS.PMI.GPMS@accenture.com>; Betti, Diego <diego.betti@accenture.com>
+Subject: VDI Connection Issue
+
+Dear Helpdesk, 
+
+Good day, Kindly open a ticket with the below details:
+
+Short Description: Cannot connect to VDI
+Category: Incident
+Assignment Group: GTS TIS VDI End User Support  
+Username: PMI\malega
+
+ 
+
+ 
+
+
+Best Regards, 
+   Marijo
+Marijo U. Alega
+Associate Application Developer
+Accenture Advanced Technology Center, Manila, Philippines
+Philip Morris International | FMS GPMS
+9F Cybergate 3, Mandaluyong City
+Email: marijo.u.alega@accenture.com
+
+Plan Ahead. Be Ahead. Plan BCM. 
+|  ACCENTURE CONFIDENTIAL
+
+
+________________________________________
+
+This message is for the designated recipient only and may contain privileged, proprietary, or otherwise confidential information. If you have received it in error, please notify the sender immediately and delete the original. Any other use of the e-mail by you is prohibited. Where allowed by local law, electronic communications with Accenture and its affiliates, including e-mail and instant messaging (including content), may be scanned by our systems for the purposes of information security and assessment of internal compliance with Accenture policy. Your privacy is important to us. Accenture uses your personal data only in compliance with data protection laws. For further information on how Accenture processes your personal data, please see our privacy statement at https://www.accenture.com/us-en/privacy-policy. 
+______________________________________________________________________________________
+
+www.accenture.com
+","Issue reported: VDI Connection Issue
+Steps taken to resolve: User session was in hung state, we have cleared the session and the issue was fixed.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: Yes, please see the comments below. 
+",VDI Connection Issue,"VDI Connection Issue  Dear Helpdesk, 
+
+Good day, Kindly open a ticket with the below details:
+
+Short Description: Cannot connect to VDI
+Category: Incident
+Assignment Group: GTS TIS VDI End User Support  
+Username: PMI\malega
+
+ 
+
+ 
+
+
+Best Regards","User session was in hung state, we have cleared the session and the issue was fixed.","1st resolution:,
+Prakash M R
+
+2nd resolution: 
+--END--
+--> Upon checking, user confirmed to be in hung state, so we have restarted the VDI. User is able to login to VDI and working fine. Hence we are closing this ticket.
+3rd resolutionVDA agent has been down since morning, we have restarted the server and now agent is up and running. User unable to connect to VDI through agent."
+81,TPE TIS VDI End User Support,"Hi Team,
+
+I am not able to open VDI. Please find the attached screen shot for your reference.
+
+ 
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+","Issue reported: Unable to open VDI
+Steps taken to resolve: user VDI is in out of network state, through screen sharing allowed user  to login and connected via VPN.
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: Yes, PFA
+",Unable to open VDI,"Unable to open VDI Hi Team,
+
+I am not able to open VDI. Please find the attached screen shot for your reference.
+
+ 
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+","user VDI is in out of network state, through screen sharing allowed user to login and connected via VPN.","1st resolution:PFA: VDI - User not able to login the VDI.
+2nd resolution:
+--> 
+3rd resolution VM was in hung state and it has been restarted. Then user able to access the VDI. Hence we are closing this ticket."
+82,TPE TIS VDI End User Support,"
+
+From: Nuthalapati, Nirupama (contracted) [mailto:Nirupama.Nuthalapati@contracted.sampoerna.com] 
+Sent: 02 December 2019 15:38
+To: PMI, IS European Help Desk - Lausanne <ISEuropeanHelpDesk-Laus.PMI@pmi.com>
+Cc: Banerjee, Tapas (contracted) <Tapas.Banerjee@contracted.sampoerna.com>; Amitabha Chanda1 <achanda1@in.ibm.com>; PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Subject: URGENT: Unable to connect to my VDI - nnuthala
+Importance: High
+
+Hi Team,
+I am unable to access my VDI for the last 90 minutes. I have even tried to restart my VDI. Only get a message ""Cannot complete request"". Please check and fix this ASAP. My project delivery is  getting impacted due to this issue. 
+
+Regards,
+Nirupama 
+","Issue reported: Unable to connect to my VDI - nnuthala
+Steps taken to resolve: user VDI is in hung state, so restarted the VDI.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: PFA
+
+Incident 'SRQ01226657' closed based on closure of task 'SRQ01228075'
+
+Issue reported: Unable to connect to my VDI - nnuthala
+Steps taken to resolve: user VDI is in hung state, so restarted the VDI.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: PFA
+",URGENT: Unable to connect to my VDI - nnuthala,"URGENT: Unable to connect to my VDI - nnuthala  Importance: High
+
+Hi Team,
+I am unable to access my VDI for the last 90 minutes. I have even tried to restart my VDI. Only get a message ""Cannot complete request"". Please check and fix this ASAP. My project delivery is  getting impacted due to this issue. 
+
+Regards,
+Nirupama","user VDI is in hung state, so restarted the VDI.","1st resolution: NUTHALA
+2nd resolution:
+--> user VDI is in hung state, so restarted the VDI.
+3rd resolution
+Hi Team,
+I am unable to access my VDI for the last 90 minutes. I have even tried to restart my VDI. Only get a message ""Cannot complete request"". Please check and fix this ASAP. My project delivery is  getting impacted due to this issue. 
+"
+83,TPE TIS VDI End User Support,"Hi Team,
+I am unable to access my VDI for the last 90 minutes. I have even tried to restart my VDI. Only get a message ""Cannot complete request"". Please check and fix this ASAP. My project delivery is  getting impacted due to this issue. 
+
+Regards,
+Nirupama 
+","Issue reported: Unable to connect to my VDI - nnuthala
+Steps taken to resolve: user VDI is in hung state, so restarted the VDI.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: PFA
+",Unable to connect to my VDI - nnuthala,"Unable to connect to my VDI - nnuthala Hi Team,
+I am unable to access my VDI for the last 90 minutes. I have even tried to restart my VDI. Only get a message ""Cannot complete request"". Please check and fix this ASAP. My project delivery is  getting impacted due to this issue. 
+
+Regards,
+Nirupama 
+","user VDI is in hung state, so restarted the VDI.","1st resolution:
+--END--
+--> 
+2nd resolution: VM screen sharing access granted to user nnuthala.
+3rd resolutionVM state is restarted. user asked to restart the server."
+84,TPE TIS VDI End User Support,"Dear Team,
+
+I am not able to login in VDI . My VDI No.: IBMINKOLV00956.
+
+
+Please look into the matter.
+
+ 
+
+Thanks and regards,
+Sayani Ghosh
+
+
+
+","Issue reported: Not able to login VDI
+Steps taken to resolve:  advised user to clear browser cache files or try accessing the VDI in different browser.
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: please find in the below work notes.
+",Not able to login VDI,"Not able to login VDI Dear Team,
+
+I am not able to login in VDI . My VDI No.: IBMINKOLV00956.
+
+
+Please look into the matter.
+
+ 
+
+Thanks and regards,
+Sayani Ghosh
+
+
+
+",advised user to clear browser cache files or try accessing the VDI in different browser.,"1st resolution:
+
+--> 
+2nd resolution: VM was in hung state , has been restarted . User confirmed that he is able to login to the VDI .
+3rd resolution--> The user had disconnected session, so we have logged off the disconnected session."
+85,TPE TIS VDI End User Support,"Hi Team,
+
+I am not able to open VDI. Please find the attached screen shot for your reference.
+
+Completely stack. Unable to do anything. I have a delivery today. So, please help me as early as possible.
+
+ 
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+","Issue: Unable to open VDI
+Action Taken : We have turned off maintenance mode. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.",Unable to open VDI,"Unable to open VDI Hi Team,
+
+I am not able to open VDI. Please find the attached screen shot for your reference.
+
+Completely stack. Unable to do anything. I have a delivery today. So, please help me as early as possible.
+
+ 
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+",,"1st resolution:-------------------------------------------------------------------
+
+--> 
+2nd resolution: screen sharing session has been disconnected.
+3rd resolution user confirmed to be accessible after restarting the VDI."
+86,TPE TIS VDI End User Support,"Hi All,
+
+I am not able to login to VDI. I am getting  the below message. Kindly assist regarding the same.
+
+ 
+Thanks and regards
+Sujata MItra
+Ph:+918697146077
+
+
+","No action taken, user able to access his/her VDI.",Not able to access VDI,"Not able to access VDI Hi All,
+
+I am not able to login to VDI. I am getting  the below message. Kindly assist regarding the same.
+
+ 
+Thanks and regards
+Sujata MItra
+Ph:+918697146077
+
+
+",,"1st resolution:--END-- Screen sharing session has been disconnected in between.
+2nd resolution:
+
+--> 
+3rd resolution The VDI is in hung state, so restarted the VDI."
+87,TPE TIS VDI End User Support,"Hello,
+Sorry for disturbing.
+I'm encountering all this kind of issues regarding Outlook today.
+Despite of the fact that I've erased the credentials from Credentials Manager, repair, mailboxes remaping, restart or VDI restart, it keeps looking like ""Not Responding"".
+I can't open any folder from it 'cause it's appearing that ""Not Responding"".
+Can you please check and help?
+Thank you very much.
+Bogdan","Issue reported:Outlook not responding
+Steps taken to resolve:We have removed all additional mailboxes and re added again, now outlook looks good. User confirmed to close the SRQ.
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES.Please find the comments in work notes.",Outlook not responding,"Outlook not responding Hello,
+Sorry for disturbing.
+I'm encountering all this kind of issues regarding Outlook today.
+Despite of the fact that I've erased the credentials from Credentials Manager, repair, mailboxes remaping, restart or VDI restart, it keeps looking like ""Not Responding"".
+I can't open any folder from it 'cause it's appearing that ""Not Responding"".
+Can you please check and help?
+Thank you very much.
+Bogdan","We have removed all additional mailboxes and re added again, now outlook looks good. User confirmed to close the SRQ.","1st resolution: Vasiuc
+
+2nd resolution:
+As per the screen shots, outlook profile is in disconnected state, so we have removed the profile and added again. Now mailboxes are accessible & outlook is working fine without any issues. PFA
+3rd resolution
+As per the above discussion, I had removed the profile from outlook and added again. Issue has been resolved."
+88,TPE TIS VDI End User Support,"
+
+From: Sujay Bhattacharjee [mailto:sujbhatt@in.ibm.com] 
+Sent: Wednesday, January 1, 2020 9:15 AM
+To: PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Subject: Unable to login in VDI
+
+Hi Team,
+
+I have worked on VDI and from where connected with the Open VPN and my VDI is disconnected automatically and now, unable to login again in my VDI.
+
+Please look into it.
+
+My VDI user id is sbhattac7.
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+","Issue reported:Unable to login in VDI
+Steps taken to resolve: Through screen sharing user able to  log in to his VDI and connected to VPN, 
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: please find in the below work notes.
+",Unable to login in VDI,"Unable to login in VDI  Hi Team,
+
+I have worked on VDI and from where connected with the Open VPN and my VDI is disconnected automatically and now, unable to login again in my VDI.
+
+Please look into it.
+
+My VDI user id is sbhattac7.
+
+Thanks","Through screen sharing user able to log in to his VDI and connected to VPN,","1st resolution: and Regards,
+
+Soumyabrata 
+
+
+2nd resolution: --END-- 
+3rd resolution Hi Team,I have worked on VDI and from where connected with the Open VPN and my VDI is disconnected automatically and now, unable to login again in my VDI.Please look into it.My VDI user id is sbhattac7.Thanks and Regards,Soumyabrata"
+89,TPE TIS VDI End User Support,"Dear  Team,
+User is not able to  access VDI. Please  look into this issue.","Issue: unable to login in VDI.
+Action Taken : Upon checking VDI was in unregistered state and same has been fixed after restarting the VDI.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment ",unable to login in VDI.,"unable to login in VDI. Dear  Team,
+User is not able to  access VDI. Please  look into this issue.",,"1st resolution:
+Regards,
+
+2nd resolution: -- The user VDI was in hung state, we have restarted the VDI and informed user about the same. User has confirmed to close this request.
+3rd resolution
+--> We have restarted the VDI and informed user about the same."
+90,TPE TIS VDI End User Support,"Dear team,
+User is not able to access VDI. Its showing can not start Desktop error.
+","Issue: Unable to login in VDI.
+Action Taken :  Upon checking, VDI was not booted properly and same has been fixed after rebooting. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",Unable to login in VDI.,"Unable to login in VDI. Dear team,
+User is not able to access VDI. Its showing can not start Desktop error.
+",,"1st resolution:Please check and fix the issue.
+Thank you
+--
+»»» Issue has been fixed after a screen re-detection.
+2nd resolution:
+We have run the screen re-detection for the VDI's with IP change in the VM console and now user is able to access the VDI. The same has been confirmed by the user. Hence we are closing this ticket.
+3rd resolution
+Hi,
+User is able to login to his VDI. Hence we are closing this ticket."
+91,TPE TIS VDI End User Support,"Hi Team,
+ 
+I'm not able to open VDI.
+Getting below error.
+ 
+Could you please check from your end.
+VDI : IBMINKOLV01240
+ 
+Best Regards,
+Ankit Gupta
+
+","Issue reported: Not able to open VDI
+Steps taken to resolve: We have disabled the maintenance mode. User is now able to access the VDI and the same has been confirmed in the below work note. Hence we are closing this ticket.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes, Please find the below work notes.",Not able to open VDI,"Not able to open VDI Hi Team,
+ 
+I'm not able to open VDI.
+Getting below error.
+ 
+Could you please check from your end.
+VDI : IBMINKOLV01240
+ 
+Best Regards,
+Ankit Gupta
+
+",We have disabled the maintenance mode. User is now able to access the VDI and the same has been confirmed in the below work note. Hence we are closing this ticket.,"1st resolution:
+
+2nd resolution:
+--> User VDI is in hung state, so restarted the VDI.
+3rd resolution
+--> Upon checking, user confirmed that he is able to access the VDI without any issues. Hence we are closing this ticket."
+92,TPE TIS VDI End User Support,"Dear team,
+user is not able to login in VDI. its showing black screen.
+","Issue reported: Unable to login in VDI.
+Steps taken to resolve: Upon checking, the vDI is in hung state. We have restarted the VDI in order to fix the issue. Now user is able to access the VDI. Hence we are closing this request.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes,PFA",Unable to login in VDI.,"Unable to login in VDI. Dear team,
+user is not able to login in VDI. its showing black screen.
+","Upon checking, the vDI is in hung state. We have restarted the VDI in order to fix the issue. Now user is able to access the VDI. Hence we are closing this request.","1st resolution:kindly check the same and fix it ASAP.
+Thank you.
+2nd resolution: User session state is in disconnected state, we have restarted the VDI and informed user to login and confirm the same.
+3rd resolution
+--> "
+93,TPE TIS VDI End User Support,"Hi Team,
+
+I'm not able to open VDI.
+Getting below message.
+Kindly help me with this.
+
+ 
+Note : I was connected to VPN.
+
+Best Regards,
+Ankit Gupta
+Mobile:9163840433
+","Issue reported:VDI Issue
+Steps taken to resolve: We had a screen sharing session with user and issue has been resolved once the user logged in and connected to OpenVPN. The same has been confirmed by the user.Hence we are closing this ticket.
+Did you use KB article or updated KB?n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: yes,PFA",VDI Issue,"VDI Issue Hi Team,
+
+I'm not able to open VDI.
+Getting below message.
+Kindly help me with this.
+
+ 
+Note : I was connected to VPN.
+
+Best Regards,
+Ankit Gupta
+Mobile:9163840433
+",We had a screen sharing session with user and issue has been resolved once the user logged in and connected to OpenVPN. The same has been confirmed by the user.Hence we are closing this ticket.,"1st resolution:
+
+2nd resolution:
+--> 
+3rd resolution--> "
+94,TPE TIS VDI End User Support,"Dear team,
+user is not able to login  in VDI. Its showing Planned maintenance.
+
+","Issue reported: Unable to login in VDI
+Steps taken to resolve: Upon checking, the VDI is in hung state. We have restarted the VDI and disabled maintenance in order to fix this issue. The same has been confirmed by the user. Hence we are closing the ticket.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes,PFA",Unable to login in VDI,"Unable to login in VDI Dear team,
+user is not able to login  in VDI. Its showing Planned maintenance.
+
+","Upon checking, the VDI is in hung state. We have restarted the VDI and disabled maintenance in order to fix this issue. The same has been confirmed by the user. Hence we are closing the ticket.",
+95,TPE TIS VDI End User Support,"Dear Team,
+
+Please check this VDI issue urgently. I am assigning SRQ to your team.
+
+Thanks & Regards
+      Sourav Das
+
+
+From: Subrata Datta3 [mailto:subradat@in.ibm.com] 
+Sent: Tuesday, January 28, 2020 3:56 PM
+To: PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Subject: My VDI is down, Could you please help to resolve this issue
+
+ 
+","Issue: Unable to access VDI.
+Action Taken : Upon checking the vdi maintenance mode is enabled and same has been disable. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment ",Unable to access VDI.,Unable to access VDI.  ,,"1st resolution:
+
+The user was able to login to the VDI and the issue was fixed.  
+                                                                                         
+END> Issue related to unable to access VDI via RDP is resolved.
+2nd resolution:--> 
+3rd resolution--> "
+96,TPE TIS VDI End User Support,"Hello Sourav, 
+
+Kindly inform the user to try accessing the VDI now, and also kindly raise an SRQ for the same. Thanks. 
+
+Regards,
+Venkatesh S
+Client Virtualization & VDI End User Support - Wipro
+On Call : +91 9176352159
+PMI INFORMATION SERVICES
+
+From: Das, Sourav (contracted) 
+Sent: Tuesday, February 4, 2020 9:21 AM
+To: DL WIP Global TIS Client Virtualization <DLWIPGlobalTISClientVirtualization@pmi.com>
+Cc: Roy, Sanjoy (contracted) <Sanjoy.Roy@contracted.sampoerna.com>
+Subject: Unable to access VDI. 
+
+Dear Team, 
+User sanjay Roy is unable to access VDI. 
+could you please check urgently. 
+
+Thanks & Regards
+Sourav Das
+","Issue reported:Unable to access VDI.  
+Steps taken to resolve: User VDI was in unregistered state, hence we have restarted the VDI. 
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, email conversation attached. 
+",Unable to access VDI. ,"Unable to access VDI.   Dear Team, 
+User sanjay Roy is unable to access VDI. 
+could you please check urgently. 
+
+Thanks","User VDI was in unregistered state, hence we have restarted the VDI.","1st resolution: & Regards,
+Sudipta Roy 
+--> We have reset the user VDI and removed from maintenance mode.
+2nd resolution:--> User VDI is in unregistered state, so we have restarted the VDI.
+3rd resolution--> User VDI is in unregistered state, so we have restarted the VDI."
+97,TPE TIS VDI End User Support,"Hi Team,
+
+Again, I am facing same issue. Please look into it.
+My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307
+
+ 
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+
+
+ Sujay Bhattacharjee---03-02-2020 04:31:59 PM---Hi Ijaz, Again, I am facing same issue. Please look into it.
+
+From: Sujay Bhattacharjee/India/IBM
+To: ""Sayyed, Ijaz (contracted)"" <Ijaz.Sayyed@contracted.pmi.com>
+Cc: ""Das, Sourav (contracted)"" <Sourav.Das@contracted.pmi.com>
+Date: 03-02-2020 04:31 PM
+Subject: Re: [EXTERNAL] RE: Unable to login in VDI
+________________________________________
+
+
+Hi Ijaz,
+
+Again, I am facing same issue. Please look into it.
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+
+
+
+ ""Sayyed, Ijaz (contracted)"" ---03-02-2020 02:59:23 PM---Hi Sourav, User session is active now. No need of any action currently.
+
+From: ""Sayyed, Ijaz (contracted)"" <Ijaz.Sayyed@contracted.pmi.com>
+To: ""Das, Sourav (contracted)"" <Sourav.Das@contracted.pmi.com>
+Cc: Sujay Bhattacharjee <sujbhatt@in.ibm.com>, ""PMI, IBM India Help Desk"" <IBMhelpdesk@pmi.com>, DL WIP Global TIS Client Virtualization <DLWIPGlobalTISClientVirtualization@pmi.com>
+Date: 03-02-2020 02:59 PM
+Subject: [EXTERNAL] RE: Unable to login in VDI
+________________________________________
+
+
+
+Hi Sourav,
+
+User session is active now. No need of any action currently.
+
+Best Regards,
+Ijaz
+Client Virtualization – WIPRO
+On-Call No:+91-9176352159/ Desk: +91-4449739090
+PMI INFORMATION TECHNOLOGY | TECHNOLOGY & PLATFORMS ENGINEERING
+
+From: Das, Sourav (contracted) 
+Sent: Monday, February 3, 2020 2:58 PM
+To: DL WIP Global TIS Client Virtualization <DLWIPGlobalTISClientVirtualization@pmi.com>
+Cc: Sujay Bhattacharjee <sujbhatt@in.ibm.com>; PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Subject: RE: Unable to login in VDI
+
+Dear Team,
+Please look into this urgently.
+
+Thanks & Regards
+Sourav Das
+
+
+
+From: Sujay Bhattacharjee [mailto:sujbhatt@in.ibm.com] 
+Sent: Monday, February 3, 2020 2:17 PM
+To: PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>
+Subject: Unable to login in VDI
+Hi Team,
+
+I am not able to login in my VDI. Please look into it.
+
+My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307
+
+ 
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+
+","Issue reported:My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307
+Steps taken to resolve: User VDI was in unregistered state and out of network, hence had a screen sharing session to fix the issue. 
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, email conversation attached. 
+",My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307,"My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307  ________________________________________
+
+
+Hi Ijaz,
+
+Again, I am facing same issue. Please look into it.
+
+Thanks ________________________________________
+
+
+
+Hi Sourav,
+
+User session is active now. No need of any action currently.
+
+Best Regards Dear Team,
+Please look into this urgently.
+
+Thanks Hi Team,
+
+I am not able to login in my VDI. Please look into it.
+
+My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307
+
+ 
+
+Thanks","User VDI was in unregistered state and out of network, hence had a screen sharing session to fix the issue.","1st resolution: & Regards
+
+Ijaz Ahmad
+
+
+--END--- Hi Ijaz,The user session is disconnected now, so we are trying to reconnect the session. Please check again in few minutes.----END----Hi Ijaz,The user VDI is down now. We have restarted the VDI and attached the screen shot before restarting the VDI.
+2nd resolution:Hi Ijaz,VRDP is down. Kindly restart the VRDP and let us know if you face any issues in future.
+3rd resolutionHi Ijaz,We are able to login the VDI now. But the screen resolution has changed. Kindly fix the screen resolution."
+98,TPE TIS VDI End User Support,"Dear team,
+user is not able to access VDI. Please check.
+","Issue: Unable to access VDI.
+Action Taken : Upon checking, User UPM profile size is huge and same has been cleared. Now user able to login hence closing this ticket. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",Unable to access VDI.,"Unable to access VDI. Dear team,
+user is not able to access VDI. Please check.
+",,"</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+</END>
+"
+99,TPE TIS VDI End User Support,"Hello Team,
+
+I'm not able to open my VDI. Its saying ""Temporarily unavilable due to planed maintenance"".
+Could you please fix this asap. I'm not able to do my daily work.
+
+Username : psahu1
+
+
+Thanks & Regards,
+
+Pritam Sahu
+IBM - GBS Global Delivery
+Mob : +91 9635478426
+","Issue reported: Not able to open VDI - Temporarily unavilable due to planed maintenance
+Steps taken to resolve: Turned off the maintenance mode and then user able to access the VDI 
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: PF the below work notes.",Not able to open VDI - Temporarily unavilable due to planed maintenance,"Not able to open VDI - Temporarily unavilable due to planed maintenance Hello Team,
+
+I'm not able to open my VDI. Its saying ""Temporarily unavilable due to planed maintenance"".
+Could you please fix this asap. I'm not able to do my daily work.
+
+Username : psahu1
+
+
+Thanks & Regards,
+
+Pritam Sahu
+IBM - GBS Global Delivery
+Mob : +91 9635478426
+",Turned off the maintenance mode and then user able to access the VDI,"1st resolution:
+2nd resolution: -- had a screen sharing with user, now he able to access the VDI and made it available for user.--- FYI, in the past there was an issue with user profile & PFA, which has been fixed by the help of IBM strategist.
+3rd resolution
+PFA related - User profile is not loading in OBS workspace. Profile was copied from another server and then copied to OBS workspace.Profile is working fine now. Please find below screen shot.Thanks & Regards,Pritam SahuIBM - GBS Global DeliveryMobile: +91 9635478426"
+100,TPE TIS VDI End User Support,I don't have anything on my desktop and also my Outlook won't open. ,"Issue: VDI problem
+Action Taken : We have updated the master disk, now it looks good. hence closing this ticket 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment.  ",VDI problem,VDI problem I don't have anything on my desktop and also my Outlook won't open. ,,"1st resolution:ive attached the screenshot below.
+
+
+2nd resolution: -- I have checked, Outlook is working fine, Also checked VDI - View is fine. Re-installed Citrix receiver and restarted the VDI.
+3rd resolution
+
+Direct link to shared folder:\\10.10.100.100\VDI\Share
+
+Attached screenshots
+
+"
+101,TPE TIS VDI End User Support," 
+Hi Help Desk,
+Could you please raise the ticket to ""GTS Virtual Desktop Service"" group.
+ 
+@ GTS team,
+I am unable to login to my VDI (IBMINKOLV00567) . 
+Restarted VDI two times , still facing the following issue "" The Desktop 10 -Kolkata"" is temporarily unavailable due to planned maintenance."" 
+Please help me to resolve this issue ASAP.
+ 
+Thanks and Regards,
+Nagarjun Reddy .T
++91 7353773777.
+
+","Issue reported: unable to login VDI
+Steps taken to resolve: Upon checking,  the VDI is fine from our end. We have asked the user to run the Citrix cleanup and re-install it. Then user is able to access the VDI.
+Later user informed that the VDI is slow. We  have checked and the issue is with the local network. The same has been informed to the user. Now, user has confirmed to close the ticket. Hence we are closing this request.
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: Yes, Please find the below work notes.",unable to login VDI(IBMINKOLV00567),"unable to login VDI(IBMINKOLV00567)  
+Hi Help Desk,
+Could you please raise the ticket to ""GTS Virtual Desktop Service"" group.
+ 
+@ GTS team,
+I am unable to login to my VDI (IBMINKOLV00567) . 
+Restarted VDI two times , still facing the following issue "" The Desktop 10 -Kolkata"" is temporarily unavailable due to planned maintenance."" 
+Please help me to resolve this issue ASAP.
+ 
+Thanks and Regards,
+Nagarjun Reddy .T
++91 7353773777.
+
+","Upon checking, the VDI is fine from our end. We have asked the user to run the Citrix cleanup and re-install it. Then user is able to access the VDI.","1st resolution: 
+--> Upon checking, the maintenance work request in PS note has not been closed. We have asked the user to clear the screen and then restarted the VDI. After that, the user confirmed the issue is resolved.
+2nd resolution:--> Upon checking, the maintenance work request in PS note has not been closed. We have asked the user to clear the screen and then restarted the VDI. After that, the user confirmed the issue is resolved.
+3rd resolution--> Upon checking, the maintenance work request in PS note has not been closed. We have asked the user to clear the screen and then restarted the VDI. After that, the user confirmed the issue is resolved."
+102,TPE TIS VDI End User Support,"Hi Team,
+
+I have worked on VDI and from where connected with the Open VPN and my VDI is disconnected automatically and now, unable to login again in my VDI. Please look into it.
+
+My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307
+
+Please consider this mail as urgent.
+
+Note: You can join in webex for support. https://ibm.webex.com/meet/sujbhatt
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+","Issue reported: Unable to login in VDI
+Steps taken to resolve:  We had a screen sharing with user, disconnected the user from VPN and restarted the VDI. Now the user is able to login to the VDI. Hence we are closing this ticket.PFA
+Did you use KB article or updated KB? n/a
+PRB or CHANGE has been created: n/a
+HAS User confirmed: yes,PFA",Unable to login in VDI,"Unable to login in VDI Hi Team,
+
+I have worked on VDI and from where connected with the Open VPN and my VDI is disconnected automatically and now, unable to login again in my VDI. Please look into it.
+
+My VDI user id is sbhattac7 and VDI name is IBMINKOLV01307
+
+Please consider this mail as urgent.
+
+Note: You can join in webex for support. https://ibm.webex.com/meet/sujbhatt
+
+Thanks & Regards,
+Sujay
+-------------------------------------------------------------------
+Sujay Bhattacharjee
+Mail: sujbhatt@in.ibm.com
+Mob: +91 98307 69949
+","We had a screen sharing with user, disconnected the user from VPN and restarted the VDI. Now the user is able to login to the VDI. Hence we are closing this ticket.PFA","1st resolution:--END--
+
+2nd resolution: --SUJAY--
+--> VM was in hung state, had a screen sharing with user and restarted the VM.
+3rd resolution
+We have checked the VDI, It is connected and able to login. We are copying below screenshot FYR."
+103,TPE TIS VDI End User Support,"Dear team,
+Unable to access VDI. its  showing Planned maintenance.
+User contact no-+91 9836772772","Issue reported:unable to access VDI.
+Steps taken to resolve: We have restarted the VDI and the issue resolved. User also confirmed the same through email. PFA
+Did you use KB article or updated KB?: NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: YES.PFA",unable to access VDI.,"unable to access VDI. Dear team,
+Unable to access VDI. its  showing Planned maintenance.
+User contact no-+91 9836772772",We have restarted the VDI and the issue resolved. User also confirmed the same through email. PFA,"1st resolution:
+Regards,
+P.Kumar
+--> We have disabled maintenance mode and user is able to access VDI.
+2nd resolution:
+--> As per the user request, we have enabled the maintenance mode.
+3rd resolution
+"
+104,TPE TIS VDI End User Support,VDI is not connecting,"Issue: VDI is not connecting
+Action Taken : We have rebooted the VDI after that user able to connect. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment. ",VDI is not connecting,VDI is not connecting VDI is not connecting,, VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting VDI is not connecting
+105,TPE TIS VDI End User Support,"Hi Team,
+
+Not able to open VDI.
+All of sudden screen gets black and VDI gets disconnected.
+Kindly do the needful.
+I was connected to VPN.
+please join ""https://ibm.webex.com/meet/ankgu115""  for screen sharing session.
+
+Thanks,
+Ankit Gupta","Issue: Unable to open VDI
+Action Taken : We have fixed network drive issue now user able to connect VDI.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",Unable to open VDI,"Unable to open VDI Hi Team,
+
+Not able to open VDI.
+All of sudden screen gets black and VDI gets disconnected.
+Kindly do the needful.
+I was connected to VPN.
+please join ""https://ibm.webex.com/meet/ankgu115""  for screen sharing session.
+
+Thanks,
+Ankit Gupta",,"1st resolution:
+
+--> 
+2nd resolution:--> 
+3rd resolution--> "
+106,TPE TIS VDI End User Support," 
+Dear All,
+ 
+Kindly do the needful as mu VDI is not working since 20 mins . I tried restart  2 times but the same issue .
+ 
+I am able to enter VDI and the desktop screen icons , curser and nothing is working ( Hangingup for long ) .
+ 
+Kindly do the the needful so that I can work / attend meetings ( As I am not able to )
+ 
+BR,
+Alok
+----- Original message -----
+From: ""Panda, Alok (contracted)"" <Alok.Panda@contracted.pmi.com>
+To: Sourav Das8 <sourdas8@in.ibm.com>, DL WIP Global TIS Client Virtualization <DLWIPGlobalTISClientVirtualization@pmi.com>
+Cc: Alok Panda <alokpanda@in.ibm.com>, ""PMI, IBM India Help Desk"" <IBMhelpdesk@pmi.com>, ""Maitra, Ambarish (contracted)"" <Ambarish.Maitra@contracted.pmi.com>
+Subject: [EXTERNAL] RE: PMI VDI screen is coming as Blank - BLACK screen post I connected my VDI since 15 mins now_Apanda
+Date: Thu, Mar 19, 2020 2:18 PM
+ 
+Dear All,
+ 
+With restarting attempts –  This issue was overcomed as of now .
+ 
+Thanks for all your support .
+ 
+BR,
+Alok
+ 
+From: Sourav Das8 [mailto:sourdas8@in.ibm.com]
+Sent: Thursday, March 19, 2020 2:14 PM
+To: DL WIP Global TIS Client Virtualization <DLWIPGlobalTISClientVirtualization@pmi.com>
+Cc: Panda, Alok (contracted) <Alok.Panda@contracted.pmi.com>; Alok Panda <alokpanda@in.ibm.com>; PMI, IBM India Help Desk <IBMhelpdesk@pmi.com>; Maitra, Ambarish (contracted) <Ambarish.Maitra@contracted.pmi.com>
+Subject: Re: PMI VDI screen is coming as Blank - BLACK screen post I connected my VDI since 15 mins now_Apanda 
+ 
+Dear Team,
+
+Please check this VDI issue urgently.
+Thanks & Regards,
+
+    Sourav Das
+
+BT/IT - GBS CIC ( Client Innovation Centre )India
+https://ibm.biz/BTITIndia
+
+ 
+ 
+   
+
+
+
+
+
+From:        Alok Panda/India/IBM
+To:        Sourav Das8/India/Contr/IBM@IBMIN
+Cc:        alok.panda@contracted.pmi.com
+Date:        03/19/2020 02:01 PM
+Subject:        PMI VDI screen is coming as Blank - BLACK screen post I connected my VDI since 15 mins now_Apanda 
+________________________________________
+
+
+
+ 
+Hi Sourav,
+ 
+KIndly check if this subject issue can be refreshed / rectified at the earliest .
+ 
+The screen is Blank - Black screen .
+ 
+BR,
+Alok
+ 
+ 
+ 
+ 
+
+","Issue: PMI VDI screen is coming as Blank - BLACK screen post I connected my VDI since 20 mins now_Apanda
+Action Taken : We have rebooted the VDI now user able to connect without any issue. hence closing this ticket. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",PMI VDI screen is coming as Blank - BLACK screen post I connected my VDI since 20 mins now_Apanda,"PMI VDI screen is coming as Blank - BLACK screen post I connected my VDI since 20 mins now_Apanda  Date: Thu, Mar 19, 2020 2:18 PM
+ 
+Dear All,
+ 
+With restarting attempts –  This issue was overcomed as of now .
+ 
+Thanks Dear Team,
+
+Please check this VDI issue urgently.
+Thanks ________________________________________
+
+
+
+ 
+Hi Sourav,
+ 
+KIndly check if this subject issue can be refreshed / rectified at the earliest .
+ 
+The screen is Blank - Black screen .
+ 
+BR,
+Alok",,"1st resolution: 
+-----END---- 
+Hi All,
+We have restarted the VDI and the issue was fixed.
+Thanks & Regards
+--> Upon checking, the VDI is running in disconnected state. Hence we have reconnected the VDI and the issue has been fixed.
+2nd resolution:
+
+3rd resolution ---> Issue has been fixed after re-installation of the agent."
+107,TPE TIS VDI End User Support,"Hello Sourav,
+ 
+I amunable to open VDI.. pls help
+ 
+ 
+ 
+
+
+
+Thanks & Regards,
+
+Shaalini Bhardwaj
+
+IBM India Pvt Ltd|Pune|Shaalini.bhardwaj@in.ibm.com
+
+ 
+
+","Issue reported: unable to open VDI
+Steps taken to resolve: User VDI is in hung state , Issue resolved after restarting the VDI.
+Did you use KB article or updated KB?Na
+PRB or CHANGE has been created: Na
+HAS User confirmed:  yes, please find in the below work noted.
+",unable to open VDI,"unable to open VDI Hello Sourav,
+ 
+I amunable to open VDI.. pls help
+ 
+ 
+ 
+
+
+
+Thanks & Regards,
+
+Shaalini Bhardwaj
+
+IBM India Pvt Ltd|Pune|Shaalini.bhardwaj@in.ibm.com
+
+ 
+
+","User VDI is in hung state , Issue resolved after restarting the VDI.","1st resolution:
+
+I have successfully login to VDI and access the application.
+2nd resolution:--> 
+3rd resolution--> "
+108,TPE TIS VDI End User Support,Unale to launche BODS through Citrix application getting the attached error.Please look into the issue .,"Issue: Unale to launche BODS through Citrix application
+Action Taken : Upon checking, we found citrix receiver was corrupted and same has been reinstalled through software center. Now user able to access the application. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the attachment ",Unale to launche BODS through Citrix application,Unale to launche BODS through Citrix application Unale to launche BODS through Citrix application getting the attached error.Please look into the issue .,,"1st resolution:
+2nd resolution:--Thanks & RegardsRasika Mishra
+3rd resolution--> "
+109,TPE TIS VDI End User Support,"Hi Team,
+While trying to logged in VDI , I am getteing error as 'The desktop ""Windows 10 - Dedicated - IBM"" is temporarily unavailable due to the planned maintenance.' Requesting you to resolve the issue immediately.
+
+Regards,
+Subrata
+PH # 09874765999","Issue: VDI down - IBMINKOLV00816
+Action Taken : We have disabled the maintenance mod. User able to access the VDI now.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",VDI down - IBMINKOLV00816,"VDI down - IBMINKOLV00816 Hi Team,
+While trying to logged in VDI , I am getteing error as 'The desktop ""Windows 10 - Dedicated - IBM"" is temporarily unavailable due to the planned maintenance.' Requesting you to resolve the issue immediately.
+
+Regards,
+Subrata
+PH # 09874765999",,"1st resolution:
+--END--
+--> 
+2nd resolution: VM access issue in the VDI.
+3rd resolutionThe maintenance work request #QPPM-4130 has been completed. User confirmed that now he is able to access the VDI."
+110,TPE TIS VDI End User Support,"Hi all,
+
+Actually, since this morning I am trying to open my VDI. But it is not working, it is stuck in the loading screen. I have uploaded an image, where it is stuck. 
+
+Can you please suggest me what should I do here. I have already tried restarting my VDI.
+
+Akash Kumar Goswami
+IBM India Pvt. Ltd.
+","Issue: Unable to open VDI
+Action Taken : Informed the user to try after clearing the browser cache and temp files. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.",Unable to open VDI,"Unable to open VDI Hi all,
+
+Actually, since this morning I am trying to open my VDI. But it is not working, it is stuck in the loading screen. I have uploaded an image, where it is stuck. 
+
+Can you please suggest me what should I do here. I have already tried restarting my VDI.
+
+Akash Kumar Goswami
+IBM India Pvt. Ltd.
+",,"1st resolution:IBM CPLE 001
+BANGALORE, KARNATAKA - 560085
+FAX: +91-80-30754096
+
+2nd resolution:
+From the console output it looks like, when user attempted to log in, FQDN name resolution was not successful and hence VDI couldn't connect to the server. Hence we have restarted the server and now user is able to login to his VDI.
+3rd resolution
+Sincerely,
+Soumi Sarkar
+IBM Corporation - IBM India Pvt. Ltd.
+P.O. Box # 0089QQT1010IBMIRL Bangalore - 560001IndiaFAX : 8888938539
+"
+111,TPE TIS VDI End User Support,"Hi Team,
+I am facing issues in connecting VDI. Requesting you to resolve this issue immediateley.
+
+ 
+Regards,
+Subrata
+","Issue: VDI is not connecting
+Action Taken : Upon checking, VDI was in unregistered state and same has been fixed after rebooting
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",VDI is not connecting,"VDI is not connecting Hi Team,
+I am facing issues in connecting VDI. Requesting you to resolve this issue immediateley.
+
+ 
+Regards,
+Subrata
+",,"1st resolution:--> 
+2nd resolution: the user's VDI is in unregistered state, hence we have restarted the VDI.
+3rd resolution 
+--> "
+112,TPE TIS VDI End User Support,"Hi Team,
+
+Not able to open VDI.
+Getting  ""temporarily unavailable due to planned maintenance""
+Please check and resolve this issue.
+If it requires a screen share then ping me here in chat section and join on below webex.
+https://ibm.webex.com/meet/ankgu115
+
+Thanks & Regards,
+Ankit Gupta","Issue reported:Unable to open VDI
+Steps taken to resolve: user session state is in hung state, after a successful restart user able to login to VDI. 
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, Kindly read the below weok notes.
+
+",Unable to open VDI,"Unable to open VDI Hi Team,
+
+Not able to open VDI.
+Getting  ""temporarily unavailable due to planned maintenance""
+Please check and resolve this issue.
+If it requires a screen share then ping me here in chat section and join on below webex.
+https://ibm.webex.com/meet/ankgu115
+
+Thanks & Regards,
+Ankit Gupta","user session state is in hung state, after a successful restart user able to login to VDI.","1st resolution:
+PFA Team,
+IBM India Pvt. Ltd.
+PFA Workplace - VDI maintenance done successfully.
+https://psfaiit.rptools.ibm.com/PSFAIIT/home.do?request=displayPFA%20IIT%20-%20VDA%20maintenance%20done%20successfully. 
+--END--
+--> Upon checking, the issue was due to network connectivity issue. User confirmed that he is able to login to the VDI and the same has been confirmed by the IT team in the below mail. Hence we are closing this ticket.
+2nd resolution:--> Upon checking the console session, user is able to login to the VDI. Hence we are closing this ticket.
+3rd resolution--> The maintenance work order has been completed."
+113,TPE TIS VDI End User Support,"Dear Team,
+ 
+I am unable to login to my VDI because of the following problem.
+ 
+I have removed the cache and also tried login with another browser still the same problem.
+ 
+Regards,
+Dibyashree
+
+","Issue: unable to login VDI
+Action Taken : VDI is working fine from our end. Informed the user to clear the cache/temp files in the browser and then try to access the VDI.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment",unable to login VDI,"unable to login VDI Dear Team,
+ 
+I am unable to login to my VDI because of the following problem.
+ 
+I have removed the cache and also tried login with another browser still the same problem.
+ 
+Regards,
+Dibyashree
+
+",,"1st resolution: 
+ 
+--> 
+2nd resolution: user VDI is in out of network state, so we have reset the VDI.
+3rd resolution
+--> "
+114,TPE TIS VDI End User Support,"Hi Help Desk,
+
+I'm having trouble to have the citrix to load my profile. I'm trying to connect Spice admin portal remote access. Last time I was doing disconnect instead of shut down. Please do raise a ticket to respective team.
+ 
+Thank you
+Rendy
+","Issue reported: SPICE/Error - Admin portal - remote access
+Action Taken : We have done the profile reset. now user able to access vdi. 
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",SPICE/Error - Admin portal - remote access,"SPICE/Error - Admin portal - remote access Hi Help Desk,
+
+I'm having trouble to have the citrix to load my profile. I'm trying to connect Spice admin portal remote access. Last time I was doing disconnect instead of shut down. Please do raise a ticket to respective team.
+ 
+Thank you
+Rendy
+",,"1st resolution:
+2nd resolution:
+
+--> 
+3rd resolution As per request, we have changed the profile setting to "" Lock"" and now user is able to access the profile."
+115,TPE TIS VDI End User Support,"Dear Team,
+
+My VDI is not responding. Below is the screen shot of the same :
+
+ 
+VDI details are :
+
+username :  PMI\adas
+VDI number : IBMINKOLV01319
+
+
+Could you please check with GTS team and do the needful.
+
+Thanks and Regards,
+Abhishek Das
+Senior System Analyst
+IBM , Global Business Services India
+DLF IT Park,Tower B , 3rd Floor
+New Town, Rajarhat, Kolkata 700156 , India
+91-(0)98303-02040(M)
+e-mail : das.abhishek@in.ibm.com
+","Issue: VDI again not responding
+Action Taken : Upon checking, VDI is looks good and also user able to access the VDI now.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.",VDI again not responding,"VDI again not responding Dear Team,
+
+My VDI is not responding. Below is the screen shot of the same :
+
+ 
+VDI details are :
+
+username :  PMI\adas
+VDI number : IBMINKOLV01319
+
+
+Could you please check with GTS team and do the needful.
+
+Thanks and Regards,
+Abhishek Das
+Senior System Analyst
+IBM , Global Business Services India
+DLF IT Park,Tower B , 3rd Floor
+New Town, Rajarhat, Kolkata 700156 , India
+91-(0)98303-02040(M)
+e-mail : das.abhishek@in.ibm.com
+",,"1st resolution:
+--> Upon checking, the VDI is in hung state. So restarted the VDI and now it is working fine. User confirmed to close the ticket.
+2nd resolution:--> Upon checking, the VDI is in hung state. So restarted the VDI and now it is working fine. User confirmed to close the ticket.
+3rd resolution--> Upon checking, the VDI is in hung state. So restarted the VDI and now it is working fine. User confirmed to close the ticket."
+116,TPE TIS VDI End User Support,"
+
+From: Goismier, Adeline 
+Sent: Friday, April 17, 2020 11:33 AM
+To: PMI, IT European Help Desk - France <PMI.ITHelpdeskFrance@pmi.com>
+Cc: Vaccaro, Milko <Milko.Vaccaro@pmi.com>
+Subject: VDI access issue
+
+Hello 
+I'm not able to access the VDI this morning, I have the following error message, could you please open an SRQ and help me fix this issue ?
+Thanks
+
+ 
+
+Adeline Goismier
+IT Analyst – B2C 
+Phillip Morris France
+Tel: +33.1.55.91.69.95
+
+","Issue reported:VDI access issue - The user profile Service failed the sign-in - User profile cannot be loaded
+Steps taken to resolve:Profile reset was done to fix the issue. 
+Did you use KB article or updated KB?NA
+PRB or CHANGE has been created: NA
+HAS User confirmed: yes, email conversation attached.
+",VDI access issue - The user profile Service failed the sign-in - User profile cannot be loaded,"VDI access issue - The user profile Service failed the sign-in - User profile cannot be loaded  Hello 
+I'm not able to access the VDI this morning, I have the following error message, could you please open an SRQ and help me fix this issue ?
+Thanks",Profile reset was done to fix the issue.,"1st resolution:,
+--> Profile reset was done to fix the issue.
+2nd resolution:
+--> User had disconnected session in his profile, so we have logged him out and asked user to sign in again.
+3rd resolution
+--> Issue has been fixed after profile reset."
+117,TPE TIS VDI End User Support,"Hi Team,
+ 
+Attached is the error message while am trying to access my VDI.
+Kindly do the needful.
+ 
+Thanks,
+Kavita
+ 
+
+","Issue: VDI Error
+Action Taken : Upon checking, VDI was in unregistered state and same has been fixed after rebooting.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment. ",VDI Error,"VDI Error Hi Team,
+ 
+Attached is the error message while am trying to access my VDI.
+Kindly do the needful.
+ 
+Thanks,
+Kavita
+ 
+
+",,
+118,TPE TIS VDI End User Support,"Hi Team,
+
+I am not able to logged in VDI. Please help me in resolving the issue.
+
+ 
+","Issue: Not able to connect VDI
+Action Taken : Upon checking, VDI was in unregistered state and same has been fixed after rebooting.
+KB: NA
+PRB: NA
+User confirmation: yes, refer the below comment.  ",Not able to connect VDI,"Not able to connect VDI Hi Team,
+
+I am not able to logged in VDI. Please help me in resolving the issue.
+
+ 
+",,"1st resolution:
+Regards,
+Uday Vaidya 
+
+--> 
+2nd resolution: The user VDI is in unregistered state, we have initiated request to PFA for repair. As soon as we get confirmation, we will update the same to user. Meanwhile the user has acknowledged the same in a separate mail and asked to close the ticket.
+3rd resolution --> "
+119,TPE TIS VDI End User Support,"User not able to access VDI and getting error message - Not able to complete your request. 
+Already cleared browser cache and restarted system. Still issue not solved. ","Issue reported:User not able to access VDI
+Steps taken to resolve: user able to connect VDI from other windows system. So, it seems that issue with local MAC system, Kindly check with IBM local helpdesk support for fixing this issue.
+Did you use KB article or updated KB? NA
+PRB or CHANGE has been created: NA
+HAS User confirmed:  yes, find in the below work notes.
+",User not able to access VDI,"User not able to access VDI User not able to access VDI and getting error message - Not able to complete your request. 
+Already cleared browser cache and restarted system. Still issue not solved. ","user able to connect VDI from other windows system. So, it seems that issue with local MAC system, Kindly check with IBM local helpdesk support for fixing this issue.","1st resolution:
+In the attached file, user is able to login with VDI's IP address. Can we modify the IP address in the list? Please find the attachment.
+2nd resolution:
+--> 
+3rd resolution VM was in unavailabe state, we have restarted the VM to fix the issue."

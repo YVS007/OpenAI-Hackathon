@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technician Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+
+  
+  <main>
+    <header>
+        <h1>Technician Dashboard</h1>
+      </header>
+
+      <script>
+
+
+
+      function redirectToLink(link_id) {
+
+        window.location = "/ticketdetails/"+link_id.toString();
+      }
+
+
+      var noScrollLinks = document.getElementsByClassName("no-scroll");
+      for (var i = 0; i < noScrollLinks.length; i++) {
+        noScrollLinks[i].addEventListener("click", function(event) {
+          event.preventDefault();
+        });
+      }
+
+    </script>
+
+
+        {% for i in range(data.ticketid|length) %}
+    
+                <!-- Ticket Section -->
+                <section class="ticket">
+                  <h2>Ticket ID: {{data['ticketid'][i]}}</h2>
+                  <p>{{data['ticket'][i]}}</p>
+                  <div class="tag-container">
+
+                    {% for tag in data['tags'][i] %}
+                        <a href="#noid" class="no-scroll" onclick="onclicktag('{{tag}}')"> <span class="tag">{{tag}}</span> </a>
+                    {% endfor %}
+                 
+                  </div>
+                  <br>
+                  <br>
+                  <div class="btn-cont">
+                    <div class="buttons">
+                      <button type="button" id="view-ticket-{{data['ticketid'][i]}}" class="view-ticket" onclick="redirectToLink('{{ data.ticketid[i] }}')">View Ticket</button>
+                    </div>
+                  </div>
+                </section>
+      
+        {% endfor %}
+
+    <!-- Modal for tag specific tickets -->
+    <div id="kg-modal" class="kg-modal-class">
+      <div class="tag-modal kg-modal-content">
+        
+        <span class="close">&times;</span>
+          <h2>Tickets Related To Tag: "{{tag_for_modal}}" </h2>
+          <br>
+
+          <script>
+              
+              var modal = document.getElementById("kg-modal");
+              var span = document.getElementsByClassName("close")[0];
+
+ 
+              
+              function onclicktag(tag){
+
+                sessionStorage.setItem('scrollPosition', window.pageYOffset);
+                window.location.href = "/?tag=" + tag; 
+
+              }
+
+        if(window.location.href.includes("tag")){
+          
+
+          window.onload = () => {
+          if (sessionStorage.getItem('scrollPosition')) {
+            window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
+            sessionStorage.removeItem('scrollPosition');
+          }
+        };
+          modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+          </script>
+
+          {% for i in range(data.ticketid|length) %}
+
+                        {% if tag_for_modal in data['tags'][i] %}
+                            <!-- Ticket Section for TAG SPECIFIC -->
+                            <section class="ticket" id="tag-specific-section-{{data['ticketid'][i]}}" onclick="redirectToLink('{{ data.ticketid[i] }}')">
+                              <h2>Ticket ID: {{data['ticketid'][i]}}</h2>
+                              <p>{{data['ticket'][i]}}</p>
+                              <div class="tag-container">
+                                {% for tag in data['tags'][i] %}
+                                    <a href="#noid" id="{{tag}}"> <span class="tag">{{tag}}</span> </a>
+
+                                {% endfor %}
+                              
+                              </div>
+                              </section>
+                          {% endif %}
+            {% endfor %}
+            
+
+      </div>
+
+
+    </div>
+
+
+  </main>
+  
+</body>
+</html>

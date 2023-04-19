@@ -1,0 +1,85 @@
+ticketid,ticket,tags,resolution,rootcause,knowledgegraph
+53527,Parking in a no-parking zone,"parking,violations","If you receive a parking ticket for parking in a no-parking zone, you will need to pay the fine. Make sure to read signs carefully before parking to avoid this violation in the future.",Pay fine and be mindful of signage,"{
+              ""nodes"": [
+                { ""id"": ""node1"", ""label"": ""Parking"" },
+                { ""id"": ""node2"", ""label"": ""Violations"" },
+                { ""id"": ""node3"", ""label"": ""Traffic"" },
+                { ""id"": ""node4"", ""label"": ""Car"" }
+              ],
+              ""links"": [
+                { ""source"": ""node1"", ""target"": ""node2"" },
+                { ""source"": ""node2"", ""target"": ""node3"" },
+                { ""source"": ""node3"", ""target"": ""node1"" },
+                { ""source"": ""node1"", ""target"": ""node4"" }
+              ]
+            }"
+44253,Expired registration,"registration,violations","If you receive a ticket for expired registration, you will need to renew your registration as soon as possible. You may also have to pay a fine. To avoid this violation, make sure to renew your registration on time.",Renew registration and potentially pay fine,"{
+              ""nodes"": [
+                { ""id"": ""node1"", ""label"": ""Registrations"" },
+                { ""id"": ""node2"", ""label"": ""Violations"" },
+                { ""id"": ""node3"", ""label"": ""Traffic"" },
+                { ""id"": ""node4"", ""label"": ""Car"" }
+              ],
+              ""links"": [
+                { ""source"": ""node1"", ""target"": ""node2"" },
+                { ""source"": ""node2"", ""target"": ""node3"" },
+                { ""source"": ""node3"", ""target"": ""node1"" },
+                { ""source"": ""node1"", ""target"": ""node4"" }
+              ]
+            }"
+87226,Parking in a handicap spot without a permit,"parking,violations,handicap","If you receive a ticket for parking in a handicap spot without a permit, you will need to pay the fine. Make sure to only park in handicap spots if you have a valid permit.",Pay fine and only park in handicap spots with valid permit,"{
+              ""nodes"": [
+                { ""id"": ""node1"", ""label"": ""Registrations"" },
+                { ""id"": ""node2"", ""label"": ""Violations"" },
+                { ""id"": ""node3"", ""label"": ""Traffic"" },
+                { ""id"": ""node4"", ""label"": ""Handicap"" }
+              ],
+              ""links"": [
+                { ""source"": ""node1"", ""target"": ""node2"" },
+                { ""source"": ""node2"", ""target"": ""node3"" },
+                { ""source"": ""node3"", ""target"": ""node1"" },
+                { ""source"": ""node1"", ""target"": ""node4"" }
+              ]
+            }"
+52763,Parking in front of a fire hydrant,"parking,violaions,fire","If you receive a ticket for parking in front of a fire hydrant, you will need to pay the fine. Always make sure to leave enough space in front of fire hydrants for emergency vehicles to access them.",Pay fine and leave space in front of fire hydrants,"{
+              ""nodes"": [
+                { ""id"": ""node1"", ""label"": ""Registrations"" },
+                { ""id"": ""node2"", ""label"": ""Violations"" },
+                { ""id"": ""node3"", ""label"": ""Hydrant"" },
+                { ""id"": ""node4"", ""label"": ""Car"" }
+              ],
+              ""links"": [
+                { ""source"": ""node1"", ""target"": ""node2"" },
+                { ""source"": ""node2"", ""target"": ""node3"" },
+                { ""source"": ""node3"", ""target"": ""node1"" },
+                { ""source"": ""node1"", ""target"": ""node4"" }
+              ]
+            }"
+33234,Running a red light,"traffic,violations,redlight","If you receive a ticket for running a red light, you will need to pay the fine. Always make sure to stop at red lights, even if no other cars are around.",Pay fine and obey traffic signals,"{
+              ""nodes"": [
+                { ""id"": ""node1"", ""label"": ""Registrations"" },
+                { ""id"": ""node2"", ""label"": ""Violations"" },
+                { ""id"": ""node3"", ""label"": ""Redlight"" },
+                { ""id"": ""node4"", ""label"": ""Car"" }
+              ],
+              ""links"": [
+                { ""source"": ""node1"", ""target"": ""node2"" },
+                { ""source"": ""node2"", ""target"": ""node3"" },
+                { ""source"": ""node3"", ""target"": ""node1"" },
+                { ""source"": ""node1"", ""target"": ""node4"" }
+              ]
+            }"
+75663,Speeding,"traffic,violations,speeding","If you receive a ticket for speeding, you will need to pay the fine. Always make sure to obey speed limits and drive safely.",Pay fine and obey speed limits,"{
+              ""nodes"": [
+                { ""id"": ""node1"", ""label"": ""Registrations"" },
+                { ""id"": ""node2"", ""label"": ""Violations"" },
+                { ""id"": ""node3"", ""label"": ""Speeding"" },
+                { ""id"": ""node4"", ""label"": ""Car"" }
+              ],
+              ""links"": [
+                { ""source"": ""node1"", ""target"": ""node2"" },
+                { ""source"": ""node2"", ""target"": ""node3"" },
+                { ""source"": ""node3"", ""target"": ""node1"" },
+                { ""source"": ""node1"", ""target"": ""node4"" }
+              ]
+            }"

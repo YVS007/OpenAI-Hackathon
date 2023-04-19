@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Details</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script>
+      function redirectToLink(link_id) {
+
+          window.location = "/ticketdetails/"+link_id.toString();
+      }
+    function enableTextBox() {
+        document.getElementById("ticket_details-id").scrollIntoView({behavior: 'smooth'});
+        var textBox = document.getElementById("resolution");
+        textBox.disabled = false;
+        textBox.select()
+        console.log("Hi")
+        var textBox = document.getElementById("rootcause");
+        textBox.disabled = false;
+    }
+</script>
+
+</head>
+<body>
+
+  
+  <main>
+    <header>
+        <h1>Ticket Details</h1>
+      </header>
+
+    <section class="ticket_details" id="ticket_details-id">
+      <h2>Ticket ID: {{data_row['ticketid'][0]}}</h2>
+      <p>{{data_row['ticket'][0]}}</p>
+      <div class="tag-container">
+        {% for tag in data_row['tags'][0] %}
+                <a href="#noid" class="no-scroll" onclick="onclicktag('{{tag}}')"> <span class="tag">{{tag}}</span> </a>
+        {% endfor %}
+      </div>
+
+
+      <h3>Resolution:</h3>
+      <textarea id="resolution" class="resolution_class" disabled>{{data_row['resolution'][0]}}</textarea>
+      <br>
+      <br>
+      <h3>Root Cause:</h3>
+      <textarea id="rootcause" class="rootcause_class" disabled>{{data_row['rootcause'][0]}}</textarea>
+      
+      <br>
+      <br>
+
+      <br>
+
+    <div>  
+        <a href="#noid" class="kg-link-class" id="kg-open-modal">View Knowledge Graph</a>
+    </div>
+
+    <br>
+    <br>
+
+      <div class="btn-cont">
+
+      <div class="buttons" style="margin-top:20px; float: left;">
+        <button type="button" onclick="enableTextBox()" class="edit-button">Edit</button>
+        <button type="button" class="pass-button">Pass</button>
+        <a href="/" class="goto-dash">Go To Dashboard</a>
+      </div>
+
+    </div>
+
+
+    </section>
+
+    <div id="kg-modal" class="kg-modal-class">
+        <div class="kg-modal-content">
+          <span class="close">&times;</span>
+
+          <!-- Modal content -->
+          
+          <svg></svg>
+
+          <script>
+
+            const data = JSON.parse('{{ kg_data | tojson }}');
+      
+            const width = 400;
+            const height = 400;
+      
+            const svg = d3.select("svg");
+      
+            const simulation = d3.forceSimulation(data.nodes)
+              .force("link", d3.forceLink(data.links).id(d => d.id).distance(200))
+              .force("charge", d3.forceManyBody())
+              .force("center", d3.forceCenter(width / 2, height / 2));
+      
+            const link = svg.selectAll(".link")
+              .data(data.links)
+              .enter()
+              .append("line")
+              .attr("class", "link");
+      
+            const node = svg.selectAll(".node")
+              .data(data.nodes)
+              .enter()
+              .append("g")
+              .attr("class", "node")
+              .call(drag(simulation));
+      
+            node.append("circle")
+              .attr("r", 40);
+      
+            node.append("text")
+              .text(d => d.label)
+              .attr("class", "label");
+      
+            simulation.on("tick", () => {
+              link.attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+      
+              node.attr("transform", d => `translate(${d.x},${d.y})`);
+            });
+      
+            function drag(simulation) {
+      
+              function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+              }
+      
+              function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+              }
+      
+              function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+              }
+      
+              return d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended);
+            }
+          </script>
+
+        </div>
+      </div>
+
+      <script>
+		var modal_kg = document.getElementById("kg-modal");
+		var kg_link = document.getElementById("kg-open-modal");
+		var span_kg = document.getElementsByClassName("close")[0];
+
+		kg_link.onclick = function() {
+		  modal_kg.style.display = "block";
+		}
+
+		span_kg.onclick = function() {
+		  modal_kg.style.display = "none";
+		}
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal_kg.style.display = "none";
+		  }
+		}
+	</script>
+
+
+        <!-- Modal for tag specific tickets -->
+        <div id="tag-kg-modal" class="kg-modal-class">
+          <div class="tag-modal kg-modal-content">
+            
+            <span class="tag-close">&times;</span>
+              <h2>Tickets Related To Tag: "{{tag_for_modal}}" </h2>
+              <br>
+
+              <script>
+                  
+                  var modal = document.getElementById("tag-kg-modal");
+                  var span = document.getElementsByClassName("tag-close")[0];
+
+
+                  
+                  function onclicktag(tag){
+
+                    sessionStorage.setItem('scrollPosition', window.pageYOffset);
+                    window.location.href = "/ticketdetails/"+'{{data_row.ticketid[0]}}'+"?tag=" + tag; 
+
+                  }
+
+            if(window.location.href.includes("tag")){
+              
+
+              window.onload = () => {
+              if (sessionStorage.getItem('scrollPosition')) {
+                window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
+                sessionStorage.removeItem('scrollPosition');
+              }
+            }
+              modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+              </script>
+
+              {% for i in range(data.ticketid|length) %}
+
+                            {% if tag_for_modal in data['tags'][i] %}
+                                <!-- Ticket Section for TAG SPECIFIC -->
+                                <section class="ticket" id="tag-specific-section-{{data['ticketid'][i]}}" onclick="redirectToLink('{{ data.ticketid[i] }}')">
+                                  <h2>Ticket ID: {{data['ticketid'][i]}}</h2>
+                                  <p>{{data['ticket'][i]}}</p>
+                                  <div class="tag-container">
+                                    {% for tag in data['tags'][i] %}
+                                        <a href="#noid" id="{{tag}}"> <span class="tag">{{tag}}</span> </a>
+
+                                    {% endfor %}
+                                  
+                                  </div>
+                                  </section>
+                              {% endif %}
+                {% endfor %}
+
+          </div>
+
+
+        </div>
+
+  </main>
+  
+</body>
+</html>
