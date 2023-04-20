@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 import pandas as pd
 import numpy as np
 import json
+import jsonify 
 from api import *
 
 app = Flask(__name__)
