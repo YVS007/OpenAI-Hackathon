@@ -51,4 +51,4 @@ def ticketdetails(ticket_id):
     return render_template('ticketdetails.html', data_row = data_row,kg_data = kg_data, data = data2, tag_for_modal=tag_for_modal)
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port=8080)
+    app.run(debug=True,host="0.0.0.0",port=8000)
